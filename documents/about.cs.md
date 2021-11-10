@@ -1,9 +1,17 @@
-Pavol Hejný je spoluzakladatelem platformy pro učitele H-Edu. Když v březnu 2020 vypukla karanténa, založil online virtuální tabuli CollBoard.com. Pracoval na několika projektech České společnosti ornitologické a v minulosti také vyvíjel online hru Towns.
+## Krátká verze
 
-Uspořádal několik konferencí. Například na podzim roku 2019 organizoval CzechFuture.tech. Spolupracoval na pořádání hackathonů, jako byl Hackathon vzdělávání nebo Startup Weekend v Praze.
+**Pavol Hejný** je vývojář aplikací pro vzdělávání. 
+Spolupracoval na pořádání mnoha technologických konferencí, hackathonů a soutěží.
 
-Zároveň se účastnil mnoha startupových soutěží jako mentor i porotce.
+## Dlouhá verze
 
-Mluvil na mnoha konferencích jako DevConf, LinuxDays, OpenAlt, Czech VR Fest + mnoho dalších setkání, jako jsou Frontendisti, ITnetwork.cz, Jobs Dev, atd.
+**Pavol Hejný** je spoluzakladatelem platformy pro učitele H-Edu a online virtuální tabule CollBoard.com. Pracoval na projektech České společnosti ornitologické a v minulosti také vyvíjel online hru Towns [a mnoho dalších projektů](https://github.com/hejny?tab=repositories).
 
-Má přehled o tom, co se děje v České republice pro události IT a startupy. Proto zasílá pravidelný měsíční e-mail o nejzajímavějších událostech na Czech.events.
+Mluvil na různých konferencích jako jsou DevConf, LinuxDays, OpenAlt, Czech VR Fest, Frontendisti, ITnetwork.cz, Jobs Dev, atd.
+Sám uspořádal několik technologických konferencí, spolupracoval na pořádání hackathonů a zároveň se účastnil mnoha startupových soutěží jako mentor i porotce.
+
+Má přehled o technologickém dění v České republice a lidem, kteří mají zájem, zasílá měsíční e-mail o nejzajímavějších událostech na Czech.events.
+
+## Fotka
+
+![Pavol Hejný](https://www.gravatar.com/avatar/10bceb8965947164502b4e7b3314733d?s=256)
