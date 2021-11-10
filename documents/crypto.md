@@ -1,6 +1,8 @@
 # My public crypto addresses: 
 
 - **Bitcoin:** bc1qyuy7j80lxepv2wjdvflgajyatpmyqkmc75spvq
+- **Bitcoin Cash:** _(preparing)_
+- **Bitcoin Gold:** _(preparing)_
 - **Litecoin:** ltc1q97fuufp8ahc89az36uh7u906ck7cs7fvte9jd0
 - **Ethereum:** 0x1640d8BeACC8F011f820EaCC83A5d327a70e95CA
 - **Ethereum Classic:** 0x1640d8BeACC8F011f820EaCC83A5d327a70e95CA
@@ -18,7 +20,6 @@
 - **Ergo:** _(preparing)_
 - **Algorand:** _(preparing)_
 - **Atom:** _(preparing)_
-- **Bitcoin Cash:** _(preparing)_
 - **Compound:** _(preparing)_
 - **EOS:** _(preparing)_
 - **NANO:** _(preparing)_
