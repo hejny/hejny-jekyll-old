@@ -1,0 +1,13 @@
+{
+    "autokill": true,
+    "@see": "https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-terminals",
+    "terminals": [
+        {
+            "name": "🏭 Generate projects",
+            "command": "ts-node ./scripts/generate-projects/generate-projects.ts",
+            "onlySingle": true,
+            "focus": true
+        }
+
+    ]
+}
