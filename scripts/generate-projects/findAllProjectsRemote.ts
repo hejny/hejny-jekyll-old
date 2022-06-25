@@ -1,4 +1,4 @@
-import { githubOctokit, GITHUB_ORGANIZATIONS, GITHUB_USERNAME } from '../config';
+import { githubOctokit, GITHUB_USERNAME } from '../config';
 
 export async function findAllProjectsRemote(): Promise<Record<string, string[]>> {
     const aggregatedData: Record<string, string[]> = {};
@@ -11,6 +11,8 @@ export async function findAllProjectsRemote(): Promise<Record<string, string[]>>
         aggregatedData[GITHUB_USERNAME] = data.filter(({ archived }) => !archived).map(({ html_url }) => html_url);
     }
 
+    /*
+    !!! List all organizations !!!
     for (const org of GITHUB_ORGANIZATIONS) {
         const { data } = await githubOctokit.rest.repos.listForOrg({
           
@@ -19,6 +21,7 @@ export async function findAllProjectsRemote(): Promise<Record<string, string[]>>
         });
         aggregatedData[org] = data.filter(({ archived }) => !archived).map(({ html_url }) => html_url);
     }
+    */
 
     return aggregatedData;
 }
