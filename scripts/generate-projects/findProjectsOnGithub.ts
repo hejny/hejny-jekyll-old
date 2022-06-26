@@ -21,6 +21,11 @@ export async function findProjectsOnGithub(): Promise<Array<IProjectInfo>> {
             html_url,
         } = repo;
 
+        /**
+         * TODO: Name should be extracted better (and probbably always with its emoji)
+         * TODO: URL should be separated into repositoryUrl and projectUrl (which can be same) and in link should be used projectUrl
+         */
+
         projects.push({ name, url: new URL(html_url), organization });
     }
 
