@@ -4,6 +4,7 @@ description: >-
 
 # Note: For more configuration options @see https://github.com/githubtraining/github-pages/blob/main/config.yml
 
+# !!!??? Is the theme working
 remote_theme: no-style-please # Note: For more themes @see https://pages.github.com/themes/ @see http://jekyllthemes.org/
 
 # TODO: !!! Put here all reasonable config options of picked theme
