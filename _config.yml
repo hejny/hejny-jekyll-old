@@ -5,4 +5,4 @@ description: >-
 
 # Note: For more configuration options @see https://github.com/githubtraining/github-pages/blob/main/config.yml
 
-theme: no-style-please
+theme: no-style-please # Note: For more themes @see http://jekyllthemes.org/
