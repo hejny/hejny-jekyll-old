@@ -1,10 +1,11 @@
 import { githubOctokit, GITHUB_USERNAME } from '../config';
+import { findProjectTitle } from './findProjectTitle';
 import { IOrganizationInfo } from './IProjectInfo';
 
 export async function findProjectsOnGithub(): Promise<Record<string, IOrganizationInfo>> {
     const organizationsInfo: Record<string, IOrganizationInfo> = {};
 
-    function addProject(organizationTitle: string, repoData: any) {
+    async function parseAndAddProject(organizationTitle: string, repoData: any) {
         const {
             name,
             owner: { login: organizationName },
@@ -26,7 +27,9 @@ export async function findProjectsOnGithub(): Promise<Record<string, IOrganizati
             };
         }
         const organizationInfo = organizationsInfo[organizationName];
-        organizationInfo.projects.push({ name, title: '!!!', url: new URL(html_url), organizationName });
+        const url = new URL(html_url);
+
+        organizationInfo.projects.push({ name, title: (await findProjectTitle(url)) || name, url, organizationName });
     }
 
     const { data: repositoriesPage } = await githubOctokit.rest.repos.listForUser({
@@ -34,7 +37,7 @@ export async function findProjectsOnGithub(): Promise<Record<string, IOrganizati
         per_page: 100, // TODO: pagination
     });
 
-    repositoriesPage.forEach(addProject.bind(null, 'Personal projects'));
+    await repositoriesPage.forEachAsyncSerial(parseAndAddProject.bind(null, 'Personal projects'));
 
     // TODO: List all organizations for user
     /*const { data: organizationsPage } = await githubOctokit.rest.orgs.listForUser({
@@ -48,7 +51,7 @@ export async function findProjectsOnGithub(): Promise<Record<string, IOrganizati
         // TODO: List theese organizations dynamically
         // https://github.com/settings/organizations
 
-        // TODO: !!! Add emojis
+        // TODO: !!! Add emojis to the organization names
         // TODO: !!! Make cathegory/organization for libraries (and maybe some more)
 
         //{ organizationName: 'AllForJan', organizationTitle: 'AllForJan' },
@@ -76,7 +79,7 @@ export async function findProjectsOnGithub(): Promise<Record<string, IOrganizati
             per_page: 100,
         });
 
-        repositoriesPage.forEach(addProject.bind(null, organizationTitle));
+        await repositoriesPage.forEachAsyncSerial(parseAndAddProject.bind(null, organizationTitle));
     }
 
     return organizationsInfo;

@@ -6,8 +6,11 @@ import { writeFile } from 'fs/promises';
 import { join } from 'path';
 import spaceTrim from 'spacetrim';
 import { commit } from '../0-utils/commit';
+import { declareGlobals } from '../globals';
 import { findProjectsOnGithub } from './findProjectsOnGithub';
 import { projectToMardown } from './projectToMardown';
+
+
 
 main();
 
