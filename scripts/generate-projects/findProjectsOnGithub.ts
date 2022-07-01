@@ -1,42 +1,42 @@
 import { githubOctokit, GITHUB_USERNAME } from '../config';
-import { IProjectInfo } from './IProjectInfo';
+import { IOrganizationInfo } from './IProjectInfo';
 
-export async function findProjectsOnGithub(): Promise<Array<IProjectInfo>> {
-    const projects: Array<IProjectInfo> = [];
+export async function findProjectsOnGithub(): Promise<Record<string, IOrganizationInfo>> {
+    const organizationsInfo: Record<string, IOrganizationInfo> = {};
+
+    function addProject(organizationTitle: string, repoData: any) {
+        const {
+            name,
+            owner: { login: organizationName },
+            html_url,
+            fork,
+        } = repoData;
+
+        if (fork && name !== 'graffiti-wall' && name !== 'school-calculator-frontend') {
+            // TODO: de-fork the https://github.com/Hackathon-Vzdelavani/school-calculator-frontend and https://github.com/Hackathon-Vzdelavani/school-calculator-frontend
+            console.log(`Skipping fork: ${html_url}`);
+            return;
+        }
+
+        if (!organizationsInfo[organizationName]) {
+            organizationsInfo[organizationName] = {
+                organizationName,
+                organizationTitle,
+                projects: [],
+            };
+        }
+        const organizationInfo = organizationsInfo[organizationName];
+        organizationInfo.projects.push({ name, title: '!!!', url: new URL(html_url), organizationName });
+    }
 
     const { data: repositoriesPage } = await githubOctokit.rest.repos.listForUser({
         username: GITHUB_USERNAME,
         per_page: 100, // TODO: pagination
     });
 
-    for (const repo of repositoriesPage) {
-        const {
-            name,
-            owner: { login: organization },
-            html_url,
-            fork,
-        } = repo;
+    repositoriesPage.forEach(addProject.bind(null, 'Personal projects'));
 
-        /*/
-        // Note: for debugging purposes
-        if (name === 'glTF-Sample-Models') {
-            console.log({ repo });
-        }
-        /**/
-
-        if (fork) {
-            continue;
-        }
-
-        /**
-         * TODO: Name should be extracted better (and probbably always with its emoji)
-         * TODO: URL should be separated into repositoryUrl and projectUrl (which can be same) and in link should be used projectUrl
-         */
-
-        projects.push({ name, url: new URL(html_url), organization });
-    }
-
-    // List all organizations for user
+    // TODO: List all organizations for user
     /*const { data: organizationsPage } = await githubOctokit.rest.orgs.listForUser({
         username: GITHUB_USERNAME,
         page: 2,
@@ -48,46 +48,43 @@ export async function findProjectsOnGithub(): Promise<Array<IProjectInfo>> {
         // TODO: List theese organizations dynamically
         // https://github.com/settings/organizations
 
-        'AllForJan',
-        'birdlife-cz',
-        'collboard',
-        'Hackathon-Vzdelavani',
-        'jumpingcoders',
-        'KodujProCesko2018',
-        'Learn-by-doing',
-        'sigmastamp',
-        'SmartCityHackathon',
-        'student-dreamers',
-        'teamhackback',
-        'techheavencz',
-        'thefindersteam',
-        'toilet-pay',
-        'townsgame',
-        'vrpaint',
-        'webappgames',
+        // TODO: !!! Add emojis
+        // TODO: !!! Make cathegory/organization for libraries (and maybe some more)
+
+        //{ organizationName: 'AllForJan', organizationTitle: 'AllForJan' },
+        { organizationName: 'birdlife-cz', organizationTitle: 'Česká společnost ornitologická' },
+        { organizationName: 'collboard', organizationTitle: 'Collboard.com' },
+        // {organizationName: 'Hackathon-Vzdelavani', organizationTitle: 'AllForJan'},
+        // {organizationName: 'jumpingcoders', organizationTitle: 'AllForJan'},
+        // {organizationName: 'KodujProCesko2018', organizationTitle: 'AllForJan'},
+        // {organizationName: 'Learn-by-doing', organizationTitle: 'AllForJan'},
+        { organizationName: 'sigmastamp', organizationTitle: 'SigmaStamp' },
+        // { organizationName: 'SmartCityHackathon', organizationTitle: 'AllForJan' },
+        // { organizationName: 'student-dreamers', organizationTitle: 'AllForJan' },
+        // { organizationName: 'teamhackback', organizationTitle: 'AllForJan' },
+        // { organizationName: 'techheavencz', organizationTitle: 'AllForJan' },
+        // {organizationName: 'thefindersteam', organizationTitle: 'AllForJan'},
+        { organizationName: 'toilet-pay', organizationTitle: 'Toilet Pay' },
+        { organizationName: 'townsgame', organizationTitle: 'Towns' },
+        { organizationName: 'vrpaint', organizationTitle: 'VR paint' },
+        { organizationName: 'webappgames', organizationTitle: 'WebAppGames' },
     ];
 
-    for (const org of organizations) {
+    for (const { organizationName, organizationTitle } of organizations) {
         const { data: repositoriesPage } = await githubOctokit.rest.repos.listForOrg({
-            org,
+            org: organizationName,
             per_page: 100,
         });
 
-        for (const repo of repositoriesPage) {
-            const {
-                name,
-                owner: { login: organization },
-                html_url,
-            } = repo;
-
-            projects.push({ name, url: new URL(html_url), organization });
-        }
+        repositoriesPage.forEach(addProject.bind(null, organizationTitle));
     }
 
-    return projects;
+    return organizationsInfo;
 }
 
 /**
+ * TODO: Name should be extracted better (and probbably always with its emoji)
+ * TODO: URL should be separated into repositoryUrl and projectUrl (which can be same) and in link should be used projectUrl
  * TODO: Iterate thorugh pages
  */
 
