@@ -1,10 +1,5 @@
 import { githubOctokit, GITHUB_USERNAME } from '../config';
-
-interface IProjectInfo {
-    name: string;
-    url: URL;
-    organization: string;
-}
+import { IProjectInfo } from './IProjectInfo';
 
 export async function findProjectsOnGithub(): Promise<Array<IProjectInfo>> {
     const projects: Array<IProjectInfo> = [];
@@ -19,7 +14,19 @@ export async function findProjectsOnGithub(): Promise<Array<IProjectInfo>> {
             name,
             owner: { login: organization },
             html_url,
+            fork,
         } = repo;
+
+        /*/
+        // Note: for debugging purposes
+        if (name === 'glTF-Sample-Models') {
+            console.log({ repo });
+        }
+        /**/
+
+        if (fork) {
+            continue;
+        }
 
         /**
          * TODO: Name should be extracted better (and probbably always with its emoji)
