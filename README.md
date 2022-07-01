@@ -19,15 +19,16 @@ He has an overview of what is happening in the Czech Republic for IT & startup e
 
 <!-- TODO: !!! Autogenerate -->
 
--   [me@pavolhejny.com](mailto:me@pavolhejny.com)
--   [Telegram](https://t.me/hejny)
--   [GitHub](https://github.com/hejny/)
--   [LinkedIn](https://www.linkedin.com/in/hejny/)
--   [Facebook](https://www.facebook.com/hejny)
--   [Messenger](http://m.me/hejny)
--   [Instagram](https://instagram.com/pavolhejny/)
--   [Twitter](https://twitter.com/pavolhejny)
--   [Blog](TODO)
+-   [**Web** –⁠ pavol.hejny.org](https://pavol.hejny.org)
+-   [**Mail** –⁠ pavol@hejny.org](mailto:me@pavolhejny.com)
+-   [**Telegram**](https://t.me/hejny)
+-   [**GitHub**](https://github.com/hejny/)
+-   [**LinkedIn**](https://www.linkedin.com/in/hejny/)
+-   [**Facebook**](https://www.facebook.com/hejny)
+-   [**Messenger**](http://m.me/hejny)
+-   [**Instagram**](https://instagram.com/pavolhejny/)
+-   [**Twitter**](https://twitter.com/pavolhejny)
+-   [**Blog**](https://blog.pavolhejny.com)
 
 ## 👨‍🏭 Projects
 
