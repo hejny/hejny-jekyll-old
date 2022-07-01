@@ -52,7 +52,7 @@ export async function findProjectsOnGithub(): Promise<Record<string, IOrganizati
         // https://github.com/settings/organizations
 
         // TODO: !!! Add emojis to the organization names
-        // TODO: !!! Make cathegory/organization for libraries (and maybe some more)
+        // TODO: !!! Make cathegory/organization for libraries + hackathon projects (with GH tag) (and maybe some more)
 
         //{ organizationName: 'AllForJan', organizationTitle: 'AllForJan' },
         { organizationName: 'birdlife-cz', organizationTitle: 'Česká společnost ornitologická' },
