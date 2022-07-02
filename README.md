@@ -54,7 +54,7 @@ Some projects I have worked on:<br/>
 -   [🖌 3D Paint](https://vrpaint.github.io/3d-paint/)
 -   [🐦 Liniové sčítání druhů](https://github.com/birdlife-cz/lsd)
 -   [🐦 Sčítání ptáků na krmítku](https://github.com/birdlife-cz/feeders)
--   [🐦 Zastávky](https://zastavky.birdlife.cz/)
+-   [🐦 Bezpečné zastávky](https://zastavky.birdlife.cz/)
 -   [🐦 The European Breeding Bird Atlas 2](https://zastavky.birdlife.cz/)
 -   [📜 SigmaStamp](https://github.com/sigmastamp/sigmastamp-frontend)
 -   [✂️ Space trim](https://github.com/hejny/spacetrim)
