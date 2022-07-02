@@ -30,6 +30,7 @@ export async function findProjectsOnGithub(): Promise<Array<IOrganizationInfo>> 
 
     async function parseAndAddProject(organizationTitle: string, repoData: any) {
         const {
+            id,
             name,
             owner: { login: organizationName },
             html_url,
@@ -49,6 +50,7 @@ export async function findProjectsOnGithub(): Promise<Array<IOrganizationInfo>> 
         const projectInfo = {
             name,
             title: name,
+            priority: id /* <- !!! Better */,
             projectUrl,
             repositoryUrl,
             organizationName,
@@ -83,6 +85,15 @@ export async function findProjectsOnGithub(): Promise<Array<IOrganizationInfo>> 
 
     // ➕ Add projects from other places
     PROJECTS.forEach(addProject);
+
+    // Note: Sort organizations by priority of sum of its projects
+    organizationsInfo.sort(
+        (a, b) =>
+            b.projects.reduce((sum, { priority }) => sum + priority, 0) -
+            a.projects.reduce((sum, { priority }) => sum + priority, 0),
+    );
+    // Note: Sort projects in every organization by priority
+    organizationsInfo.forEach((organizationInfo) => organizationInfo.projects.sort((a, b) => b.priority - a.priority));
 
     return organizationsInfo;
 }

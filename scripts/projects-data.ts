@@ -8,6 +8,7 @@ export const PROJECTS: IProjectInfo[] = [
         organizationName: 'birdlife-cz',
         name: `zastavky`,
         title: 'Zastávky',
+        priority: 0,
         projectUrl: new URL(`https://zastavky.birdlife.cz/`),
     },
 ];

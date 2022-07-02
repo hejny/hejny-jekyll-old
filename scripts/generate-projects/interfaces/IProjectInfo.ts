@@ -6,4 +6,5 @@ export interface IProjectInfo {
     title: string;
     projectUrl?: URL;
     repositoryUrl?: URL;
+    priority: number;
 }
