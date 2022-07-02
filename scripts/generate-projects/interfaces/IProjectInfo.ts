@@ -4,5 +4,6 @@ export interface IProjectInfo {
 
     name: string;
     title: string;
-    url: URL;
+    projectUrl?: URL;
+    repositoryUrl?: URL;
 }

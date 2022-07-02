@@ -1,4 +1,5 @@
 import { githubOctokit, GITHUB_USERNAME } from '../config';
+import { ORGANIZATIONS } from '../organizations-data';
 import { PROJECTS } from '../projects-data';
 import { findProjectTitle } from './findProjectTitle';
 import { IOrganizationInfo } from './interfaces/IOrganizationInfo';
@@ -32,6 +33,7 @@ export async function findProjectsOnGithub(): Promise<Array<IOrganizationInfo>> 
             name,
             owner: { login: organizationName },
             html_url,
+            homepage,
             fork,
         } = repoData;
 
@@ -41,62 +43,46 @@ export async function findProjectsOnGithub(): Promise<Array<IOrganizationInfo>> 
             return;
         }
 
-        const url = new URL(html_url);
+        const projectUrl = homepage && new URL(homepage);
+        const repositoryUrl = new URL(html_url);
 
-        addProject({ name, title: (await findProjectTitle(url)) || name, url, organizationName, organizationTitle });
+        const projectInfo = {
+            name,
+            title: name,
+            projectUrl,
+            repositoryUrl,
+            organizationName,
+            organizationTitle,
+        };
+
+        projectInfo.title = await findProjectTitle(projectInfo);
+        addProject(projectInfo);
     }
 
+    await Promise.all([
+        // ➕ Add projects from hejny
+        (async () => {
+            const { data: repositoriesPage } = await githubOctokit.rest.repos.listForUser({
+                username: GITHUB_USERNAME,
+                per_page: 100, // TODO: pagination
+            });
+
+            await repositoriesPage.forEachAsyncParallel(parseAndAddProject.bind(null, 'Personal projects'));
+        })(),
+
+        // ➕ Add projects from organizations
+        ORGANIZATIONS.forEachAsyncParallel(async ({ organizationName, organizationTitle }) => {
+            const { data: repositoriesPage } = await githubOctokit.rest.repos.listForOrg({
+                org: organizationName,
+                per_page: 100,
+            });
+
+            await repositoriesPage.forEachAsyncParallel(parseAndAddProject.bind(null, organizationTitle));
+        }),
+    ]);
+
+    // ➕ Add projects from other places
     PROJECTS.forEach(addProject);
-
-    const { data: repositoriesPage } = await githubOctokit.rest.repos.listForUser({
-        username: GITHUB_USERNAME,
-        per_page: 100, // TODO: pagination
-    });
-
-    await repositoriesPage.forEachAsyncSerial(parseAndAddProject.bind(null, 'Personal projects'));
-
-    // TODO: List all organizations for user
-    /*const { data: organizationsPage } = await githubOctokit.rest.orgs.listForUser({
-        username: GITHUB_USERNAME,
-        page: 2,
-        per_page: 100, // TODO: pagination
-    });
-    */
-
-    const organizations = [
-        // TODO: List theese organizations dynamically
-        // https://github.com/settings/organizations
-
-        // TODO: !!! Add emojis to the organization names
-        // TODO: !!! Make cathegory/organization for libraries + hackathon projects (with GH tag) (and maybe some more)
-
-        //{ organizationName: 'AllForJan', organizationTitle: 'AllForJan' },
-        { organizationName: 'birdlife-cz', organizationTitle: 'Česká společnost ornitologická' },
-        { organizationName: 'collboard', organizationTitle: 'Collboard.com' },
-        // {organizationName: 'Hackathon-Vzdelavani', organizationTitle: 'AllForJan'},
-        // {organizationName: 'jumpingcoders', organizationTitle: 'AllForJan'},
-        // {organizationName: 'KodujProCesko2018', organizationTitle: 'AllForJan'},
-        // {organizationName: 'Learn-by-doing', organizationTitle: 'AllForJan'},
-        { organizationName: 'sigmastamp', organizationTitle: 'SigmaStamp' },
-        // { organizationName: 'SmartCityHackathon', organizationTitle: 'AllForJan' },
-        // { organizationName: 'student-dreamers', organizationTitle: 'AllForJan' },
-        // { organizationName: 'teamhackback', organizationTitle: 'AllForJan' },
-        // { organizationName: 'techheavencz', organizationTitle: 'AllForJan' },
-        // {organizationName: 'thefindersteam', organizationTitle: 'AllForJan'},
-        { organizationName: 'toilet-pay', organizationTitle: 'Toilet Pay' },
-        { organizationName: 'townsgame', organizationTitle: 'Towns' },
-        { organizationName: 'vrpaint', organizationTitle: 'VR paint' },
-        { organizationName: 'webappgames', organizationTitle: 'WebAppGames' },
-    ];
-
-    for (const { organizationName, organizationTitle } of organizations) {
-        const { data: repositoriesPage } = await githubOctokit.rest.repos.listForOrg({
-            org: organizationName,
-            per_page: 100,
-        });
-
-        await repositoriesPage.forEachAsyncSerial(parseAndAddProject.bind(null, organizationTitle));
-    }
 
     return organizationsInfo;
 }

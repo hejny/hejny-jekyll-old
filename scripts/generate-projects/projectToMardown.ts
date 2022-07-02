@@ -1,7 +1,7 @@
 import { IProjectInfo } from './interfaces/IProjectInfo';
 
 export function projectToMardown(project: IProjectInfo): string {
-    const { title, url } = project;
+    const { title, projectUrl, repositoryUrl } = project;
 
     /*/
     // Note: for debugging purposes
@@ -9,5 +9,5 @@ export function projectToMardown(project: IProjectInfo): string {
         console.log({ project });
     }
     /**/
-    return `-   [${title}](${url})`;
+    return `-   [${title}](${projectUrl || repositoryUrl || '#'})`;
 }
