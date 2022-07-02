@@ -38,5 +38,5 @@ export async function findProjectTitle(projectInfo: IProjectInfo): Promise<strin
 }
 
 /**
- * !!! Every project should have icon
+ * !!! Every project should have emoticon
  */
