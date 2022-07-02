@@ -11,4 +11,18 @@ export const PROJECTS: IProjectInfo[] = [
         priority: 0,
         projectUrl: new URL(`https://zastavky.birdlife.cz/`),
     },
+
+    // TODO: !!! Add remaining projects
+    // {  organizationName: 'birdlife-cz',name: `web`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
+    // {  organizationName: 'birdlife-cz',name: `lsd`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
+    // {  organizationName: 'birdlife-cz',name: `kam-na-ptaky`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
+    // {  organizationName: 'birdlife-cz',name: `ebba2`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
+    // {  organizationName: 'townsgame',name: `3d-editor`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
+    // {  organizationName: 'townsgame',name: `virtualworld`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
+    // {  organizationName: 'townsgame',name: `towns3-upload`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
+    // {  organizationName: 'hejny',name: `4d-cube`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
+    //-----
+    // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
+    // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
+    // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
 ];
