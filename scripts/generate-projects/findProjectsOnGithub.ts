@@ -1,9 +1,31 @@
 import { githubOctokit, GITHUB_USERNAME } from '../config';
+import { PROJECTS } from '../projects-data';
 import { findProjectTitle } from './findProjectTitle';
-import { IOrganizationInfo } from './IProjectInfo';
+import { IOrganizationInfo } from './interfaces/IOrganizationInfo';
+import { IProjectInfo } from './interfaces/IProjectInfo';
 
-export async function findProjectsOnGithub(): Promise<Record<string, IOrganizationInfo>> {
-    const organizationsInfo: Record<string, IOrganizationInfo> = {};
+export async function findProjectsOnGithub(): Promise<Array<IOrganizationInfo>> {
+    const organizationsInfo: Array<IOrganizationInfo> = [];
+
+    function addProject(projectInfo: IProjectInfo) {
+        let organizationInfo = organizationsInfo.find(
+            ({ organizationName }) => organizationName === projectInfo.organizationName,
+        );
+
+        if (!organizationInfo) {
+            organizationInfo = {
+                organizationName: projectInfo.organizationName,
+                organizationTitle: projectInfo.organizationTitle,
+                projects: [],
+            };
+            organizationsInfo.push(organizationInfo);
+        }
+        organizationInfo.projects.push(projectInfo);
+
+        if (!organizationInfo.organizationTitle && projectInfo.organizationTitle) {
+            organizationInfo.organizationTitle = projectInfo.organizationTitle;
+        }
+    }
 
     async function parseAndAddProject(organizationTitle: string, repoData: any) {
         const {
@@ -19,18 +41,12 @@ export async function findProjectsOnGithub(): Promise<Record<string, IOrganizati
             return;
         }
 
-        if (!organizationsInfo[organizationName]) {
-            organizationsInfo[organizationName] = {
-                organizationName,
-                organizationTitle,
-                projects: [],
-            };
-        }
-        const organizationInfo = organizationsInfo[organizationName];
         const url = new URL(html_url);
 
-        organizationInfo.projects.push({ name, title: (await findProjectTitle(url)) || name, url, organizationName });
+        addProject({ name, title: (await findProjectTitle(url)) || name, url, organizationName, organizationTitle });
     }
+
+    PROJECTS.forEach(addProject);
 
     const { data: repositoriesPage } = await githubOctokit.rest.repos.listForUser({
         username: GITHUB_USERNAME,

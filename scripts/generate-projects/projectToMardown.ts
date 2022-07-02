@@ -1,4 +1,4 @@
-import { IProjectInfo } from './IProjectInfo';
+import { IProjectInfo } from './interfaces/IProjectInfo';
 
 export function projectToMardown(project: IProjectInfo): string {
     const { title, url } = project;
