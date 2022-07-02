@@ -1,4 +1,5 @@
 import fetch from 'cross-fetch';
+import spaceTrim from 'spacetrim';
 import { PackageJson } from 'type-fest';
 import { getRawUrlOnGithub } from './getRawUrlOnGithub';
 
@@ -8,10 +9,10 @@ export async function findProjectTitle(projectUrl: URL): Promise<string | null> 
     const readmeResponse = await fetch(readmeUrl.href);
     if (readmeResponse.ok) {
         const readmeText = await readmeResponse.text();
-        const readmeTitles = readmeText.matchAll(/^#\s*(?<title>.*)$/gm);
+        const readmeTitles = readmeText.matchAll(/^#\s*(?<title>[^#\n]*)$/gm);
         for (const readmeTitle of Array.from(readmeTitles)) {
-            if (!/This (project|app)/i.test(readmeTitle.groups!.title)) {
-                return readmeTitle.groups!.title;
+            if (!/This [a-zA-Z0-9\s]*(project|app)/i.test(readmeTitle.groups!.title)) {
+                return spaceTrim(readmeTitle.groups!.title);
             }
         }
     }
@@ -29,3 +30,7 @@ export async function findProjectTitle(projectUrl: URL): Promise<string | null> 
 
     return null;
 }
+
+/**
+ * !!! Every project should have icon
+ */
