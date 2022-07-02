@@ -12,7 +12,7 @@ He has spoken at many conferences such as [**DevConf**](https://www.devconf.info
 
 He has an overview of what is happening in the Czech Republic for IT & startup events. That's why he is sending out a regular monthly email about the most exciting events at [Czech.events](https://czech.events/).
 
--   [🇬🇧 Full bio in En](./documents/about.en.md)
+-   [🇬🇧 Full bio in En](./documents/about.md)
 -   [🇨🇿 Full bio in CS](./documents/about.cs.md)
 
 ## 📩 Contact
@@ -40,7 +40,7 @@ He has an overview of what is happening in the Czech Republic for IT & startup e
 <!-- TODO: !!! Autogenerate - generate some preview -->
 
 Some projects I have worked on:<br/>
-[_(All projects are here)_](./documents/projects.en.md)
+[_(All projects are here)_](./documents/projects.md)
 
 ## Personal projects
 
@@ -189,4 +189,4 @@ Some projects I have worked on:<br/>
 <!-- TODO: !!! Pick the best projects to show -->
 <!-- TODO: !!! indent ## => ### -->
 
--   […More](./documents/projects.en.md)
+-   […More](./documents/projects.md)
