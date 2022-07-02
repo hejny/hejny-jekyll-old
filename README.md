@@ -43,7 +43,7 @@ Some projects I have worked on:<br/>
 -   [🖋 Collboard](https://collboard.com/)
 -   [📚 H-edu](https://www.h-edu.cz/)
 -   [🌆 Towns](https://github.com/townsgame) <!-- TODO: Make some overview page on towns.cz and link it there -->
--   [🐦Birds.cz](https://birds.cz/)
+-   [🐦 Birds.cz](https://birds.cz/)
 -   [🗼 Towers](https://github.com/hejny/towers) <!-- TODO: Make some overview page on towers and link it there -->
 -   [🗺️ Geography for Collboard](https://github.com/collboard/map)
 -   [📈 Function builder for Collboard](https://github.com/collboard/function-builder)
@@ -53,8 +53,9 @@ Some projects I have worked on:<br/>
 -   [🎮 WebAppGames](https://github.com/webappgames/webappgames)
 -   [🖌 3D Paint](https://vrpaint.github.io/3d-paint/)
 -   [🐦 Liniové sčítání druhů](https://github.com/birdlife-cz/lsd)
--   [🐦feeders](https://github.com/birdlife-cz/feeders)
--   [🐦Zastávky](https://zastavky.birdlife.cz/)
+-   [🐦 Sčítání ptáků na krmítku](https://github.com/birdlife-cz/feeders)
+-   [🐦 Zastávky](https://zastavky.birdlife.cz/)
+-   [🐦 The European Breeding Bird Atlas 2](https://zastavky.birdlife.cz/)
 -   [📜 SigmaStamp](https://github.com/sigmastamp/sigmastamp-frontend)
 -   [✂️ Space trim](https://github.com/hejny/spacetrim)
 -   [⏰ Waitasecond](https://hejny.github.io/waitasecond/)
