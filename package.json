@@ -1,7 +1,7 @@
 {
     "name": "hejny",
     "version": "1.0.0",
-    "description": "Personal page of Pavol Hejný",
+    "description": "Web –⁠ pavol.hejny.org Mail –⁠ pavol@hejny.org Telegram GitHub LinkedIn Facebook Messenger Instagram Twitter Blog",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
