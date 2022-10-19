@@ -1,7 +1,7 @@
 {
     "name": "hejny",
     "version": "1.0.0",
-    "description": "Web –⁠ pavol.hejny.org Mail –⁠ pavol@hejny.org Telegram GitHub LinkedIn Facebook Messenger Instagram Twitter Blog",
+    "description": "Web –⁠ pavol.hejny.org Mail –⁠ pavol@hejny.org Telegram GitHub LinkedIn Facebook Messenger Instagram Twitter Blog  👨‍🏭 Projects  Some projects I have worked on: (All projects are here)  🖋 Collboard 📚 H-edu 🌆 Towns  🐦 Birds.cz 🗼 Towers  🗺️ Geography for Collboard 📈 Function builder for Collboard ♾️ Open whiteboard initiative 🗺 Map generator 🖼 3D gallery  🎮 WebAppGames 🖌 3D Paint 🐦 Liniové sčítání druhů 🐦 Sčítání ptáků na krmítku 🐦 Bezpečné zastávky 🐦 The European Breeding Bird Atlas 2 📜 SigmaStamp ✂️ Space trim ⏰ Waitasecond ❇️ XYZT …More",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 0"
     },
