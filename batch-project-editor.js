@@ -1,4 +1,3 @@
 module.exports = {
-    skipWorkflows: ['contributing', 'partners'],
+    ignoreWorkflows: ['contributing', 'partners', 'badges'],
 };
-
