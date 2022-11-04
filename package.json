@@ -1,7 +1,7 @@
 {
     "name": "hejny",
     "version": "1.0.0",
-    "description": "!!!",
+    "description": "Personal page of Pavol Hejný",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 0"
     },
