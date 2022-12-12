@@ -10,15 +10,7 @@ Personal page of Pavol Hejný
 
 Hi I am Pavol.
 
-<!--
-TODO: Add basic info about myself:
-    - DoB 1993-09-08
-    - Born in Bratislava
-    - Lives in Prague
-    - CV to download
--->
-
-<!-- TODO: Shorten the following text: -->
+<!-- TODO: !!! Shorten the following text: -->
 
 I am co-founder of a platform for teachers, [H-Edu](https://www.h-edu.cz/); when the quarantine on March 2020 began, he founded an **online virtual board** [**CollBoard.com**](https://collboard.com/). He worked on several projects of the Czech Ornithological Society([Česká společnost ornitologická](https://www.birdlife.cz/)) and in the past, he also developed his [**online game Towns**](https://github.com/townsgame).
 
@@ -30,10 +22,15 @@ He has spoken at many conferences such as [**DevConf**](https://www.devconf.info
 
 He has an overview of what is happening in the Czech Republic for IT & startup events. That's why he is sending out a regular monthly email about the most exciting events at [Czech.events](https://czech.events/).
 
+<!-- TODO: !!! Unite the versions -->
+
 -   [![British flag](./assets/languages/us-uk.svg) Bio in English](./documents/about.md)
 -   [![Česká vlajka](./assets/languages/cs.svg) Bio v Češtině](./documents/about.cs.md)
 
 ## 📩 Contact
+
+<!-- TODO: !!! Shorter and full contact link -->
+<!-- TODO: Put icon before each contact -->
 
 -   [**Web** –⁠ pavol.hejny.org](https://pavol.hejny.org)
 -   [**Mail** –⁠ pavol@hejny.org](mailto:me@pavolhejny.com)
@@ -45,6 +42,11 @@ He has an overview of what is happening in the Czech Republic for IT & startup e
 -   [**Instagram**](https://instagram.com/pavolhejny/)
 -   [**Twitter**](https://twitter.com/pavolhejny)
 -   [**Blog**](https://blog.pavolhejny.com)
+-   [**Bitcoin**](https://blog.pavolhejny.com)
+-   [**Ethereum**](https://blog.pavolhejny.com)
+-   [**Monero**](https://blog.pavolhejny.com)
+-   [**Cardano**](https://blog.pavolhejny.com)
+-   [**All crypto**](./documents/crypto.md)
 
 <!-- TODO: Articles -->
 <!-- TODO: Photos -->
@@ -54,6 +56,8 @@ He has an overview of what is happening in the Czech Republic for IT & startup e
 <!-- TODO: Collboard backgound -->
 
 ## 👨‍🏭 Projects
+
+<!-- TODO: !!! Describe the projects -->
 
 Some projects I have worked on:<br/>
 [_(All projects are here)_](./documents/projects.md)
@@ -92,6 +96,8 @@ TODO: Pick some good libraries to show
 -   [⏰ Waitasecond](https://hejny.github.io/waitasecond/)
 -   [☑️ Config Checker](https://github.com/hejny/configchecker)
 -->
+
+<!-- TODO: !!! Tech and how can I help you -->
 
 <!-------------------  Scripts ------------------->
 <!--  TODO: Share this across all the pages -->
