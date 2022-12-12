@@ -1,20 +1,6 @@
 ## Krátká verze
 
-
-<hr>
-<script>
-    console.log(`custom JS`);
-    </script>
-<style>
-    body{
-        backgound-color: #ccc;
-    }
-</style>
-<img src="https://www.gravatar.com/avatar/10bceb8965947164502b4e7b3314733d?s=512"/>
-
-
-
-**Pavol Hejný** je vývojář aplikací pro vzdělávání. 
+**Pavol Hejný** je vývojář aplikací pro vzdělávání.
 Spolupracoval na pořádání mnoha technologických konferencí, hackathonů a soutěží.
 
 ## Dlouhá verze
