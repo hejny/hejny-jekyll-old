@@ -8,5 +8,5 @@ At the same time, he participated in many events and startup competitions as a *
 
 He has spoken at many conferences such as [**DevConf**](https://www.devconf.info/)**,** [**LinuxDays**](https://www.linuxdays.cz/)**,** [**OpenAlt**](https://www.openalt.cz/)**,** [**Czech VR Fest**](https://www.facebook.com/czechvrfest/), + many other meetups like [Frontendisti](https://www.facebook.com/frontendisti/), [ITnetwork.cz](https://www.facebook.com/itnetworkcz/), [Jobs Dev](https://www.facebook.com/jobsdevcz/), etc.
 
-  
 He has an overview of what is happening in the Czech Republic for IT & startup events. That's why he is sending out a regular monthly email about the most exciting events at [Czech.events](https://czech.events/).
+

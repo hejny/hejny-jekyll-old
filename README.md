@@ -93,6 +93,8 @@ TODO: Pick some good libraries to show
 -   [☑️ Config Checker](https://github.com/hejny/configchecker)
 -->
 
+<!-------------------  Scripts ------------------->
+<!--  TODO: Share this across all the pages -->
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 <script>
   function addDarkmodeWidget() {
@@ -100,7 +102,4 @@ TODO: Pick some good libraries to show
   }
   window.addEventListener('load', addDarkmodeWidget);
 </script>
-
-<!--!!! Remove version nonce-->
-
-[1]
+<!-------------------  /Scripts ------------------->
