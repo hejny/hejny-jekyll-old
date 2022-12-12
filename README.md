@@ -30,8 +30,8 @@ He has spoken at many conferences such as [**DevConf**](https://www.devconf.info
 
 He has an overview of what is happening in the Czech Republic for IT & startup events. That's why he is sending out a regular monthly email about the most exciting events at [Czech.events](https://czech.events/).
 
--   [🇬🇧 Full bio in En](./documents/about.md)
--   [🇨🇿 Full bio in CS](./documents/about.cs.md)
+-   [![British flag](./assets/languages/us-uk.svg) Bio in English](./documents/about.md)
+-   [![Česká vlajka](./assets/languages/cs.svg) Bio v Češtině](./documents/about.cs.md)
 
 ## 📩 Contact
 
