@@ -8,6 +8,8 @@ Personal page of Pavol Hejný
 
 ![Pavol Hejný](https://www.gravatar.com/avatar/10bceb8965947164502b4e7b3314733d?s=512)
 
+
+
 <hr>
 <script>
     console.log(`custom JS`);
@@ -17,7 +19,6 @@ Personal page of Pavol Hejný
         backgound-color: #ccc;
     }
 </style>
-
 <img src="https://www.gravatar.com/avatar/10bceb8965947164502b4e7b3314733d?s=512"/>
 
 Hi I am Pavol.
