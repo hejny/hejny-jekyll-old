@@ -29,31 +29,14 @@ He has an overview of what is happening in the Czech Republic for IT & startup e
 
 ## 📩 Contact
 
-<!-- TODO: !!! Shorter and full contact link -->
 <!-- TODO: Put icon before each contact -->
 
--   [**Web** –⁠ pavol.hejny.org](https://pavol.hejny.org)
 -   [**Mail** –⁠ pavol@hejny.org](mailto:me@pavolhejny.com)
--   [**Telegram**](https://t.me/hejny)
 -   [**GitHub**](https://github.com/hejny/)
 -   [**LinkedIn**](https://www.linkedin.com/in/hejny/)
 -   [**Facebook**](https://www.facebook.com/hejny)
 -   [**Messenger**](http://m.me/hejny)
--   [**Instagram**](https://instagram.com/pavolhejny/)
--   [**Twitter**](https://twitter.com/pavolhejny)
--   [**Blog**](https://blog.pavolhejny.com)
--   [**Bitcoin**](https://blog.pavolhejny.com)
--   [**Ethereum**](https://blog.pavolhejny.com)
--   [**Monero**](https://blog.pavolhejny.com)
--   [**Cardano**](https://blog.pavolhejny.com)
--   [**All crypto**](./documents/crypto.md)
-
-<!-- TODO: Articles -->
-<!-- TODO: Photos -->
-<!-- TODO: Talks & presentation -->
-<!-- TODO: Calendar -->
-<!-- TODO: Social media -->
-<!-- TODO: Collboard backgound -->
+-   [**…More contacts…**](./documents/contact.md)
 
 ## 👨‍🏭 Projects
 
@@ -82,7 +65,7 @@ Some projects I have worked on:<br/>
 -   [✂️ Space trim](https://github.com/hejny/spacetrim)
 -   [⏰ Waitasecond](https://hejny.github.io/waitasecond/)
 -   [❇️ XYZT](https://github.com/hejny/xyzt)
--   […More](./documents/projects.md)
+-   […More…](./documents/projects.md)
 
 <!--
 TODO: Pick some good libraries to show
@@ -112,3 +95,9 @@ TODO: Pick some good libraries to show
   window.addEventListener('load', addDarkmodeWidget);
 </script>
 <!-------------------  /Scripts ------------------->
+
+<!-- TODO: Articles -->
+<!-- TODO: Photos (from blog or Social media) -->
+<!-- TODO: Talks & presentation -->
+<!-- TODO: Calendar -->
+<!-- TODO: Collboard interactive/backgound -->
