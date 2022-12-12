@@ -10,7 +10,7 @@ Personal page of Pavol Hejný
 
 Hi I am Pavol.
 
-<!-- TODO: !!! Shorten the following text: -->
+<!-- TODO: !!!5 Shorten the following text, take from short 1st person en: -->
 
 I am co-founder of a platform for teachers, [H-Edu](https://www.h-edu.cz/); when the quarantine on March 2020 began, he founded an **online virtual board** [**CollBoard.com**](https://collboard.com/). He worked on several projects of the Czech Ornithological Society([Česká společnost ornitologická](https://www.birdlife.cz/)) and in the past, he also developed his [**online game Towns**](https://github.com/townsgame).
 
@@ -21,8 +21,6 @@ At the same time, he participated in many events and startup competitions as a *
 He has spoken at many conferences such as [**DevConf**](https://www.devconf.info/)**,** [**LinuxDays**](https://www.linuxdays.cz/)**,** [**OpenAlt**](https://www.openalt.cz/)**,** [**Czech VR Fest**](https://www.facebook.com/czechvrfest/), + many other meetups like [Frontendisti](https://www.facebook.com/frontendisti/), [ITnetwork.cz](https://www.facebook.com/itnetworkcz/), [Jobs Dev](https://www.facebook.com/jobsdevcz/), etc.
 
 He has an overview of what is happening in the Czech Republic for IT & startup events. That's why he is sending out a regular monthly email about the most exciting events at [Czech.events](https://czech.events/).
-
-<!-- TODO: !!! Unite the versions -->
 
 -   [![British flag](./assets/languages/us-uk.svg) Bio in English](./documents/about.md)
 -   [![Česká vlajka](./assets/languages/cs.svg) Bio v Češtině](./documents/about.cs.md)
@@ -40,7 +38,7 @@ He has an overview of what is happening in the Czech Republic for IT & startup e
 
 ## 👨‍🏭 Projects
 
-<!-- TODO: !!! Describe the projects -->
+<!-- TODO: !!!5 Describe the projects -->
 
 Some projects I have worked on:<br/>
 [_(All projects are here)_](./documents/projects.md)
@@ -80,7 +78,7 @@ TODO: Pick some good libraries to show
 -   [☑️ Config Checker](https://github.com/hejny/configchecker)
 -->
 
-<!-- TODO: !!! Tech and how can I help you -->
+<!-- TODO: !!!5 Tech and how can I help you -->
 
 <!-------------------  Scripts ------------------->
 <!--  TODO: Share this across all the pages -->

@@ -12,7 +12,7 @@ export const PROJECTS: IProjectInfo[] = [
         projectUrl: new URL(`https://zastavky.birdlife.cz/`),
     },
 
-    // TODO: !!! Add remaining projects
+    // TODO: !! Add remaining projects
     // {  organizationName: 'birdlife-cz',name: `web`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
     // {  organizationName: 'birdlife-cz',name: `lsd`,title: '🐦 Liniové sčítání druhů',priority: 0,projectUrl: new URL(``), }
     // {  organizationName: 'birdlife-cz',name: `kam-na-ptaky`,title: '🐦Xxxxxx',priority: 0,projectUrl: new URL(``), }

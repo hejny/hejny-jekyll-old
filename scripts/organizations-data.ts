@@ -4,7 +4,7 @@ export const ORGANIZATIONS: Array<Omit<IOrganizationInfo, 'projects'>> = [
     // TODO: List theese organizations dynamically
     // https://github.com/settings/organizations
 
-    // TODO: !!! Make cathegory/organization for libraries (?) + templates (template on github) + hackathon projects (with GH tag hackathon-project ) (and maybe some more)
+    // TODO: !! Make cathegory/organization for libraries (?) + templates (template on github) + hackathon projects (with GH tag hackathon-project ) (and maybe some more)
 
     //{ organizationName: 'AllForJan', organizationTitle: 'AllForJan' },
     { organizationName: 'birdlife-cz', organizationTitle: '🐦 Česká společnost ornitologická' },

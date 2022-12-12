@@ -1,8 +1,8 @@
 Hi I am Pavol.
 
-<!-- TODO: !!! Same as CS (Cs is primary and EN is translated copy)   -->
-<!-- TODO: !!! Short version, Full version, 1st person, 3rd person  -->
-<!-- TODO: !!! Subtitile from Short version 3rd person -->
+<!-- TODO: !!!2 Same as CS (Cs is primary and EN is translated copy)   -->
+<!-- TODO: !!!3 Short version, Full version, 1st person, 3rd person  -->
+<!-- TODO: !!!4 Subtitile from Short version 3rd person -->
 
 I am co-founder of a platform for teachers, [H-Edu](https://www.h-edu.cz/); when the quarantine on March 2020 began, he founded an **online virtual board** [**CollBoard.com**](https://collboard.com/). He worked on several projects of the Czech Ornithological Society([Česká společnost ornitologická](https://www.birdlife.cz/)) and in the past, he also developed his [**online game Towns**](https://github.com/townsgame).
 

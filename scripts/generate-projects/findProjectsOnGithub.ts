@@ -50,7 +50,7 @@ export async function findProjectsOnGithub(): Promise<Array<IOrganizationInfo>> 
         const projectInfo = {
             name,
             title: name,
-            priority: id /* <- !!! Better */,
+            priority: id /* <- !! Better */,
             projectUrl,
             repositoryUrl,
             organizationName,
