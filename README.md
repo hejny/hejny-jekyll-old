@@ -10,15 +10,9 @@ Personal page of Pavol Hejný
 ![Pavol Hejný](https://www.gravatar.com/avatar/10bceb8965947164502b4e7b3314733d?s=512)
 -->
 
-<img src="https://www.gravatar.com/avatar/10bceb8965947164502b4e7b3314733d?s=512" alt="Pavol Hejný" class="avatar">
-
-<style>
-  .avatar{
-    width: 100%;
-    max-width: 512px;
-    border-radius: 100%;
-  }
-</style>
+<div class="avatar">
+<img src="https://www.gravatar.com/avatar/10bceb8965947164502b4e7b3314733d?s=512" alt="Pavol Hejný">
+</div>
 
 Hi I am Pavol.
 
@@ -91,6 +85,23 @@ TODO: Pick some good libraries to show
 -->
 
 <!-- TODO: !!!5 Tech and how can I help you -->
+
+---
+
+<!-------------------  Style ------------------->
+<style>
+
+  .avatar{
+    text-align: center;
+  }
+
+  .avatar img{
+    width: 100%;
+    max-width: 256px!important;
+    border-radius: 100%;
+  }
+</style>
+<!-------------------  /Style ------------------->
 
 <!-------------------  Scripts ------------------->
 <!--  TODO: Share this across all the pages -->
