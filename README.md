@@ -78,13 +78,18 @@ TODO: Pick some good libraries to show
   avatarElement.innerHTML = `<img src="https://www.gravatar.com/avatar/10bceb8965947164502b4e7b3314733d?s=512" alt="Pavol Hejný">`;
 
   const headingElement = document.querySelector("h1");
-  headingElement.parent.insertBefore(avatarElement, headingElement);
+  headingElement.parentElement.insertBefore(avatarElement, headingElement);
 
 
 </script>
 <style>
 
-  .avatar{
+  .avatar, h1 {
+    text-align: center;
+    border-bottom: none !important;
+  }
+
+  .avatar, h1 {
     text-align: center;
   }
 
