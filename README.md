@@ -70,6 +70,7 @@ TODO: Pick some good libraries to show
 
 <!-- TODO: !!!5 Tech and how can I help you -->
 
+<!-- TODO: !!! Figure out best includes -->
 <!--
 {% include_relative ./page/avatar.html %}
 {% include_relative ./page/dark-mode.html %}
