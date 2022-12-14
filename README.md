@@ -1,3 +1,11 @@
+<!-- TODO: !!! Figure out best includes -->
+<!--
+Note: [🦊] Jenkyll template is wrapped in a html comment so:
+            - On GitHub this code will be invisible
+            - On pavolhejny.com the code will be performed
+{% include index.html %}
+-->
+
 Hi I am Pavol.
 
 <!-- TODO: !!!5 Shorten the following text, take from short 1st person en: -->
@@ -69,12 +77,6 @@ TODO: Pick some good libraries to show
 -->
 
 <!-- TODO: !!!5 Tech and how can I help you -->
-
-<!-- TODO: !!! Figure out best includes -->
-<!--
-Note: [🦊] !!!
-{% include index.html %}
--->
 
 <!-- TODO: Articles -->
 <!-- TODO: Photos (from blog or Social media) -->
