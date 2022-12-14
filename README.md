@@ -1,19 +1,3 @@
-<!--
-
-# Pavol Hejný
-
-Personal page of Pavol Hejný
-
--->
-
-<!--
-![Pavol Hejný](https://www.gravatar.com/avatar/10bceb8965947164502b4e7b3314733d?s=512)
--->
-
-<div class="avatar">
-<img src="https://www.gravatar.com/avatar/10bceb8965947164502b4e7b3314733d?s=512" alt="Pavol Hejný">
-</div>
-
 Hi I am Pavol.
 
 <!-- TODO: !!!5 Shorten the following text, take from short 1st person en: -->
@@ -86,9 +70,18 @@ TODO: Pick some good libraries to show
 
 <!-- TODO: !!!5 Tech and how can I help you -->
 
----
+<!-------------------  Avatar ------------------->
+<script>
 
-<!-------------------  Style ------------------->
+  const avatarElement = document.createElement("div");
+  avatarElement.classList.add("avatar");
+  avatarElement.innerHTML = `<img src="https://www.gravatar.com/avatar/10bceb8965947164502b4e7b3314733d?s=512" alt="Pavol Hejný">`;
+
+  const headingElement = document.querySelector("h1");
+  headingElement.parent.insertBefore(avatarElement, headingElement);
+
+
+</script>
 <style>
 
   .avatar{
@@ -101,21 +94,9 @@ TODO: Pick some good libraries to show
     border-radius: 100%;
   }
 </style>
-<!-------------------  /Style ------------------->
+<!-------------------  /Avatar ------------------->
 
-<!-------------------  Scripts ------------------->
-<!--  TODO: Share this across all the pages -->
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-<script>
-  function addDarkmodeWidget() {
-    new Darkmode({ 
-        // @see https://darkmodejs.learn.uno/#%EF%B8%8F-options
-        label: '🌓'
-    }).showWidget();
-  }
-  window.addEventListener('load', addDarkmodeWidget);
-</script>
-<!-------------------  /Scripts ------------------->
+{% include ./page/dark-mode.html %}
 
 <!-- TODO: Articles -->
 <!-- TODO: Photos (from blog or Social media) -->
