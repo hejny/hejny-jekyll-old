@@ -70,38 +70,10 @@ TODO: Pick some good libraries to show
 
 <!-- TODO: !!!5 Tech and how can I help you -->
 
-<!-------------------  Avatar ------------------->
-<script>
-
-  const avatarElement = document.createElement("div");
-  avatarElement.classList.add("avatar");
-  avatarElement.innerHTML = `<img src="https://www.gravatar.com/avatar/10bceb8965947164502b4e7b3314733d?s=512" alt="Pavol Hejný">`;
-
-  const headingElement = document.querySelector("h1");
-  headingElement.parentElement.insertBefore(avatarElement, headingElement);
-
-
-</script>
-<style>
-
-  .avatar, h1 {
-    text-align: center;
-    border-bottom: none !important;
-  }
-
-  .avatar, h1 {
-    text-align: center;
-  }
-
-  .avatar img{
-    width: 100%;
-    max-width: 256px!important;
-    border-radius: 100%;
-  }
-</style>
-<!-------------------  /Avatar ------------------->
-
-{% include_relative page/dark-mode.html %}
+<!--
+{% include_relative ./page/avatar.html %}
+{% include_relative ./page/dark-mode.html %}
+-->
 
 <!-- TODO: Articles -->
 <!-- TODO: Photos (from blog or Social media) -->
