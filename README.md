@@ -101,7 +101,7 @@ TODO: Pick some good libraries to show
 </style>
 <!-------------------  /Avatar ------------------->
 
-{% include page/dark-mode.html %}
+{% include_relative page/dark-mode.html %}
 
 <!-- TODO: Articles -->
 <!-- TODO: Photos (from blog or Social media) -->
