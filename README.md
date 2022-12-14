@@ -73,7 +73,7 @@ TODO: Pick some good libraries to show
 <!-- TODO: !!! Figure out best includes -->
 <!--
 Note: [🦊] !!!
-{% include_relative documents/includes/index.html %}
+{% include index.html %}
 -->
 
 <!-- TODO: Articles -->

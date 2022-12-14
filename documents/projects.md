@@ -152,5 +152,5 @@ All projects I have worked on:
 <!-- TODO: !!! Figure out best includes -->
 <!--
 Note: [🦊] !!!
-{% include_relative includes/index.html %}
+{% include includes/index.html %}
 -->
