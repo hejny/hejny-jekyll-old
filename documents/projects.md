@@ -151,5 +151,5 @@ All projects I have worked on:
 <!-- TODO: !!! To generator -->
 <!-- TODO: !!! Figure out best includes -->
 <!--
-{% include_relative ../page/dark-mode.html %}
+{% include_relative includes/dark-mode.html %}
 -->

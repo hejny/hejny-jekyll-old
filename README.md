@@ -72,8 +72,8 @@ TODO: Pick some good libraries to show
 
 <!-- TODO: !!! Figure out best includes -->
 <!--
-{% include_relative ./page/avatar.html %}
-{% include_relative ./page/dark-mode.html %}
+{% include_relative documents/includes/avatar.html %}
+{% include_relative documents/includes/dark-mode.html %}
 -->
 
 <!-- TODO: Articles -->
