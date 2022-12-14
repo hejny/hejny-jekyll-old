@@ -1,4 +1,3 @@
-<!-- TODO: !!! Figure out best includes -->
 <!--
 Note: [🦊] Jenkyll template is wrapped in a html comment so:
             - On GitHub this code will be invisible

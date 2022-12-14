@@ -1,5 +1,3 @@
-<!-- TODO: !!! To generator -->
-<!-- TODO: !!! Figure out best includes -->
 <!--
 Note: See [🦊] in root README for more information
 {% include index.html %}
