@@ -1,4 +1,4 @@
-import { githubOctokit, GITHUB_USERNAME } from '../config';
+import { GITHUB_USERNAME, githubOctokit } from '../config';
 import { ORGANIZATIONS } from '../organizations-data';
 import { PROJECTS } from '../projects-data';
 import { findProjectTitle } from './findProjectTitle';
@@ -38,9 +38,13 @@ export async function findProjectsOnGithub(): Promise<Array<IOrganizationInfo>> 
             fork,
         } = repoData;
 
-        if (fork && name !== 'graffiti-wall' && name !== 'school-calculator-frontend') {
+        if (
+            fork &&
+            name !== 'graffiti-wall' &&
+            name !== 'school-calculator-frontend' /* <- TODO: Put to projects-organization.ts */
+        ) {
             // TODO: de-fork the https://github.com/Hackathon-Vzdelavani/school-calculator-frontend and https://github.com/Hackathon-Vzdelavani/school-calculator-frontend
-            console.log(`Skipping fork: ${html_url}`);
+            console.log(`Skipping ${html_url} because it is forked project`);
             return;
         }
 
