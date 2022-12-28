@@ -62,7 +62,8 @@ async function main() {
     process.exit(0);
 }
 
-/**.
+/**
+ * TODO: !!! Better/fix project names
  * TODO: Also include project from here https://docs.google.com/spreadsheets/d/1tGQBOknXYAnn9rDCE7KsbpyapVb6NKdwiONwPJl3DF0/edit?usp=sharing
- *       - Maybe EVERY project should have a Github page?
+ *       - !!! Maybe EVERY project should have a Github page?
  */
