@@ -16,7 +16,11 @@ export async function findProjectTitle(projectInfo: IProjectInfo): Promise<strin
             const readmeTitles = readmeText.matchAll(/^#\s*(?<title>[^#\n]*)$/gm);
             for (const readmeTitle of Array.from(readmeTitles)) {
                 if (!/This [a-zA-Z0-9\s]*(project|app)/i.test(readmeTitle.groups!.title)) {
-                    return spaceTrim(readmeTitle.groups!.title);
+                    const title = readmeTitle.groups!.title;
+
+                    // !!! Remove markdown tags
+
+                    return spaceTrim(title);
                 }
             }
         }

@@ -61,6 +61,7 @@ export async function findProjectsOnGithub(): Promise<Array<IOrganizationInfo>> 
             organizationTitle,
         };
 
+      
         projectInfo.title = await findProjectTitle(projectInfo);
         addProject(projectInfo);
     }
