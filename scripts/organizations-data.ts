@@ -1,5 +1,26 @@
 import { IOrganizationInfo } from './generate-projects/interfaces/IOrganizationInfo';
 
+// !!! Rename the file to projects-organization.ts
+export const TAGS = [
+    'old' /* <- Also include archived */,
+    'library',
+    'utility',
+    'game',
+    'board-game',
+    'hackathon' /* <- Also search word hackathon automatically in README */,
+    'draft',
+    'personal',
+    'showcase',
+    'talk',
+    'crypto',
+    'collboard-module',
+    'collboard-module-template',
+];
+
+// !!! Use this tags in projects
+// !!! Ignore private projects
+// !!! Grouping of pdfmk
+
 export const ORGANIZATIONS: Array<Omit<IOrganizationInfo, 'projects'>> = [
     // TODO: List theese organizations dynamically
     // https://github.com/settings/organizations
