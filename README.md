@@ -7,6 +7,16 @@ Note: [🦊] Jenkyll template is wrapped in a html comment so:
 
 Hi I am Pavol.
 
+<!--
+TODO: Remove this after competition
+TODO: Add basic info about myself:
+    - DoB 1993-09-08
+    - Born in Bratislava
+    - Lives in Prague
+    - CV to download
+-->
+
+
 <!-- TODO: !!!5 Shorten the following text, take from short 1st person en: -->
 
 I am co-founder of a platform for teachers, [H-Edu](https://www.h-edu.cz/); when the quarantine on March 2020 began, he founded an **online virtual board** [**CollBoard.com**](https://collboard.com/). He worked on several projects of the Czech Ornithological Society([Česká společnost ornitologická](https://www.birdlife.cz/)) and in the past, he also developed his [**online game Towns**](https://github.com/townsgame).
