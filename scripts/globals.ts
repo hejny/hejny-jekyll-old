@@ -17,7 +17,7 @@ declare global {
          * Variant of Array.prototype.filter with simple predicate that just tests for item not being null
          * Returns the elements of an array that is not null
          */
-        filterNull(): Array<NonNullable<T>>;
+        filterNull(): NonNullable<T>[];
 
         /**
          * Async version of Array.prototype.map
@@ -53,8 +53,8 @@ export function declareGlobals() {
         return (this as T[]).filter((_, index) => predicates[index]);
     };
 
-    (Array.prototype as any).filterNull = function <T>(): Array<NonNullable<T>> {
-        return (this as T[]).filter((item) => item !== null) as Array<NonNullable<T>>;
+    (Array.prototype as any).filterNull = function <T>(): NonNullable<T>[] {
+        return (this as T[]).filter((item) => item !== null) as NonNullable<T>[];
     };
 
     (Array.prototype as any).mapAsync = async function <T, U>(
@@ -68,7 +68,7 @@ export function declareGlobals() {
         callbackfn: (value: T, index: number, array: T[]) => Promisable<void>,
     ) {
         let index = 0;
-        for (let item of this as T[]) {
+        for (const item of this as T[]) {
             await callbackfn(item, index++, this);
         }
     };

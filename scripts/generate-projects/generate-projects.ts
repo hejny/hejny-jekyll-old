@@ -41,10 +41,10 @@ async function main() {
             Object.values(organizations)
                 .map(({ organizationTitle, projects }) =>
                     spaceTrim(
-                        (block) => `
+                        (block2) => `
                             ## ${organizationTitle}
                             
-                            ${block(projects.map(projectToMardown).join('\n'))}
+                            ${block2(projects.map(projectToMardown).join('\n'))}
                         `,
                     ),
                 )

@@ -5,8 +5,8 @@ import { findProjectTitle } from './findProjectTitle';
 import { IOrganizationInfo } from './interfaces/IOrganizationInfo';
 import { IProjectInfo } from './interfaces/IProjectInfo';
 
-export async function findProjectsOnGithub(): Promise<Array<IOrganizationInfo>> {
-    const organizationsInfo: Array<IOrganizationInfo> = [];
+export async function findProjectsOnGithub(): Promise<IOrganizationInfo[]> {
+    const organizationsInfo: IOrganizationInfo[] = [];
 
     function addProject(projectInfo: IProjectInfo) {
         let organizationInfo = organizationsInfo.find(

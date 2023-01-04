@@ -27,42 +27,42 @@ export const PROJECTS: IProjectInfo[] = [
     // {  organizationName: 'hejny',name: `3d-graph`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
     // {  organizationName: 'hejny',name: `drawing`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
     // {  organizationName: 'hejny',name: `JO537`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
-    //-----
+    // -----
     // H-edu
     // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
     // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
     // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
 
-    //-----
+    // -----
     // mojeveci
     // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
     // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
     // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
-    //-----
+    // -----
     // kostlivec
     // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
     // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
     // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
 
-    //-----
+    // -----
     // filmy
 
     // moucha, robochroust
     // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
     // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
     // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
-    //-----
+    // -----
     // TI-89
     // logic
     // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
     // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
     // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
 
-    //-----
+    // -----
     // XXX
     // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
     // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
     // {  organizationName: 'hejny',name: `xxxx`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
 
-    //-----
+    // -----
 ];

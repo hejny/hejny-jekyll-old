@@ -2,12 +2,14 @@ import chalk from 'chalk';
 import { spawn } from 'child_process';
 import spaceTrim from 'spacetrim';
 import { forTime } from 'waitasecond';
-import { execCommandNormalizeOptions } from './execCommandNormalizeOptions';
 import { IExecCommandOptions } from './IExecCommandOptions';
+import { execCommandNormalizeOptions } from './execCommandNormalizeOptions';
 
 export function execCommand(options: IExecCommandOptions): Promise<string> {
     return new Promise((resolve, reject) => {
-        let { command, humanReadableCommand, args, cwd, crashOnError, timeout } = execCommandNormalizeOptions(options);
+        const normalizedOptions = execCommandNormalizeOptions(options);
+        let { command } = normalizedOptions;
+        const { humanReadableCommand, args, cwd, crashOnError, timeout } = normalizedOptions;
 
         if (timeout !== Infinity) {
             // TODO: In waitasecond forTime(Infinity) should be equivalent to forEver()

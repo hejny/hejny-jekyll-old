@@ -20,7 +20,7 @@ export function initForPlay() {
     }
 
     process.stdin.on('keypress', (chunk, key) => {
-        if (key && key.name == 'p') {
+        if (key && key.name === 'p') {
             isPlaying = !isPlaying;
             if (isPlaying) {
                 if (resumeResolve) {
@@ -32,7 +32,7 @@ export function initForPlay() {
                     resumeResolve = resolve;
                 });
             }
-        } else if (key && key.name == 'c' && key.ctrl) {
+        } else if (key && key.name === 'c' && key.ctrl) {
             // Note: When set raw mode, Ctrl+C will not cause SIGINT so we need to do it manually
             console.info(`[ Terminated ]`);
             process.exit();

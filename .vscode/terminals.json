@@ -13,6 +13,11 @@
             "onlySingle": true
         },
         {
+            "name": "🩹 Lint fix",
+            "command": "npm run lint -- --fix",
+            "onlySingle": true
+        },
+        {
             "name": "🏭 Generate projects",
             "command": "ts-node ./scripts/generate-projects/generate-projects.ts",
             "onlySingle": true,
