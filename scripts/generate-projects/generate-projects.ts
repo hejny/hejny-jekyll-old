@@ -44,7 +44,12 @@ async function main() {
                         (block2) => `
                             ## ${organizationTitle}
                             
-                            ${block2(projects.map(projectToMardown).join('\n'))}
+                            ${block2(
+                                projects
+                                    .map(projectToMardown)
+                                    .map((projectMardown) => `-   ${projectMardown}`)
+                                    .join('\n'),
+                            )}
                         `,
                     ),
                 )
