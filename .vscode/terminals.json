@@ -3,6 +3,16 @@
     "@see": "https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-terminals",
     "terminals": [
         {
+            "name": "🧪 Test",
+            "command": "npm run test",
+            "onlySingle": true
+        },
+        {
+            "name": "🧪 Lint",
+            "command": "npm run lint",
+            "onlySingle": true
+        },
+        {
             "name": "🏭 Generate projects",
             "command": "ts-node ./scripts/generate-projects/generate-projects.ts",
             "onlySingle": true,
