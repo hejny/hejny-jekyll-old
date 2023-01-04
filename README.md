@@ -1,4 +1,8 @@
 <!--
+# 👨‍💼 Pavol Hejný
+-->
+
+<!--
 Note: [🦊] Jenkyll template is wrapped in a html comment so:
             - On GitHub this code will be invisible
             - On pavolhejny.com the code will be performed
