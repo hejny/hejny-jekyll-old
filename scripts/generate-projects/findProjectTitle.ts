@@ -3,6 +3,7 @@ import spaceTrim from 'spacetrim';
 import { PackageJson } from 'type-fest';
 import { getRawUrlOnGithub } from './getRawUrlOnGithub';
 import { IProjectInfo } from './interfaces/IProjectInfo';
+import { removeMarkdownTags } from './removeMarkdownTags';
 
 export async function findProjectTitle(projectInfo: IProjectInfo): Promise<string> {
     const { repositoryUrl } = projectInfo;
