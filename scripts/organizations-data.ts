@@ -2,13 +2,13 @@ import { IOrganizationInfo } from './generate-projects/interfaces/IOrganizationI
 
 // !!! Rename the file to projects-organization.ts
 export const TAGS = [
-    'old' /* <- Also include archived */,
+    'old' /* <- [0] Also include archived */,
     'library',
     'utility',
     'game',
     'board-game',
     'hackathon' /* <- Also search word hackathon automatically in README */,
-    'draft',
+    'draft' /* <- [0] Also include project with small number of commits */,
     'personal',
     'showcase',
     'talk',
@@ -19,7 +19,10 @@ export const TAGS = [
 
 // !!! Use this tags in projects
 // !!! Ignore private projects
+// !!! [0] Archived projects to special section to bottom
 // !!! Grouping of pdfmk
+// !!! Hide drafts
+// !!! Create label for BUG / main project in organization
 
 export const ORGANIZATIONS: Omit<IOrganizationInfo, 'projects'>[] = [
     // TODO: List theese organizations dynamically
