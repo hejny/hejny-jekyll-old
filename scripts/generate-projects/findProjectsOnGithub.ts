@@ -76,7 +76,7 @@ export async function findProjectsOnGithub(): Promise<IOrganizationInfo[]> {
             a.projects.reduce((sum, { priority }) => sum + priority, 0),
     );
     // Note: Sort projects in every organization by priority
-    organizationsInfo.forEach((organizationInfo) => organizationInfo.projects.sort((a, b) => b.priority - a.priority));
+    organizationsInfo.forEach((organizationInfo) => organizationInfo.projects.sort((a, b) => a.priority - b.priority));
 
     return organizationsInfo;
 }

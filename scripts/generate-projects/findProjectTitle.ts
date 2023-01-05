@@ -3,7 +3,8 @@ import spaceTrim from 'spacetrim';
 import { PackageJson } from 'type-fest';
 import { getRawUrlOnGithub } from './getRawUrlOnGithub';
 import { IProjectInfo } from './interfaces/IProjectInfo';
-import { removeMarkdownTags } from './removeMarkdownTags';
+import { removeMarkdownFormatting } from './removeMarkdownFormatting';
+import { removeMarkdownLinks } from './removeMarkdownLinks';
 
 export async function findProjectTitle(projectInfo: IProjectInfo): Promise<string> {
     const { repositoryUrl } = projectInfo;
@@ -18,7 +19,8 @@ export async function findProjectTitle(projectInfo: IProjectInfo): Promise<strin
             for (const readmeTitle of Array.from(readmeTitles)) {
                 if (!/This [a-zA-Z0-9\s]*(project|app)/i.test(readmeTitle.groups!.title)) {
                     let title = readmeTitle.groups!.title;
-                    title = removeMarkdownTags(title);
+                    title = removeMarkdownLinks(title);
+                    title = removeMarkdownFormatting(title);
                     return spaceTrim(title);
                 }
             }

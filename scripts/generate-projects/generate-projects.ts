@@ -70,6 +70,6 @@ async function main() {
 
 /**
  * TODO: !!!projects All projects must have emoji icons
- * TODO: Also include project from here https://docs.google.com/spreadsheets/d/1tGQBOknXYAnn9rDCE7KsbpyapVb6NKdwiONwPJl3DF0/edit?usp=sharing
+ * TODO: [🥳] Also include project from here https://docs.google.com/spreadsheets/d/1tGQBOknXYAnn9rDCE7KsbpyapVb6NKdwiONwPJl3DF0/edit?usp=sharing
  *       - !!!projects Maybe EVERY project should have a Github page?
  */

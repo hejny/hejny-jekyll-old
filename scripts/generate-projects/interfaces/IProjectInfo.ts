@@ -7,4 +7,10 @@ export interface IProjectInfo {
     projectUrl?: URL;
     repositoryUrl?: URL;
     priority: number;
+
+    tags: Set<string>;
 }
+
+/**
+ * TODO: In tags constrain string to exact union of 'old'|'draft'|...
+ */

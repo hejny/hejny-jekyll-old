@@ -1,7 +1,7 @@
 import { IProjectInfo } from './generate-projects/interfaces/IProjectInfo';
 
 /**
- *  Here are all non-github projects that I have worked on.
+ *  [🥳] Here are all non-github projects that I have worked on.
  */
 export const PROJECTS: IProjectInfo[] = [
     {
@@ -10,6 +10,7 @@ export const PROJECTS: IProjectInfo[] = [
         title: 'Zastávky',
         priority: 0,
         projectUrl: new URL(`https://zastavky.birdlife.cz/`),
+        tags: new Set(),
     },
 
     // TODO: !! Add remaining projects

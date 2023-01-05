@@ -1,7 +1,8 @@
 import { IProjectInfo } from './interfaces/IProjectInfo';
+import { removeMarkdownFormatting } from './removeMarkdownFormatting';
 
 export function projectToMardown(project: IProjectInfo): string {
-    const { title, projectUrl, repositoryUrl, priority } = project;
+    const { title, projectUrl, repositoryUrl, tags } = project;
 
     /*/
     // Note: Keeping for debugging purposes
@@ -14,6 +15,10 @@ export function projectToMardown(project: IProjectInfo): string {
 
     if (projectUrl) {
         projectMardown += ` *[🔗](${projectUrl})[👨‍💻](${repositoryUrl})*`;
+    }
+
+    if (tags.has('draft')) {
+        projectMardown = `*(draft) ${removeMarkdownFormatting(projectMardown)}*`;
     }
 
     return projectMardown;

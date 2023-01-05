@@ -11,7 +11,10 @@ export async function parseProject(
         owner: { login: organizationName },
         html_url,
         homepage,
+        topics,
         fork,
+        archived,
+        visibility,
     } = repoData;
 
     if (
@@ -24,13 +27,35 @@ export async function parseProject(
         return null;
     }
 
+    /* 
+
+    !!!!!!!!
+    if (visibility === 'private') {
+        console.log(`Skipping ${html_url} because it is private`);
+        return null;
+    }
+    */
+
     const projectUrl = homepage && new URL(homepage);
     const repositoryUrl = new URL(html_url);
+
+    let tags: Set<string> = new Set(topics);
+
+    if (archived) {
+        tags.add('old');
+    }
+
+    let priority = id;
+
+    if (tags.has('old')) {
+        priority = priority - 418891252 * 1000;
+    }
 
     const projectInfo = {
         name,
         title: name,
-        priority: id /* <- !! Better */,
+        priority,
+        tags,
         projectUrl,
         repositoryUrl,
         organizationName,
