@@ -11,11 +11,12 @@ export const TAGS = [
     'draft' /* <- [0] Also include project with small number of commits */,
     'personal' /* <- !!!projects Marked with this should have separate organization */,
     'talk' /* <- !!!projects Marked with this should have separate organization */,
-    'crypto',/* <- !!!projects Marked with this should have separate organization */
+    'crypto' /* <- !!!projects Marked with this should have separate organization */,
     'collboard-module' /* <- !!!projects Marked with this should be under collboard organization */,
     'collboard-module-template' /* <- !!!projects Marked with this should be under collboard organization */,
 ];
 
+// !!!projects LSD + feeders should have better names + links
 // !!!projects Use this tags in projects
 // !!!projects Ignore private projects
 // !!!projects [0] Archived projects to special section to bottom
