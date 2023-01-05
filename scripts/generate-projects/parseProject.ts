@@ -1,91 +1,46 @@
-import { GITHUB_USERNAME, githubOctokit } from '../config';
-import { ORGANIZATIONS } from '../organizations-data';
-import { PROJECTS } from '../projects-data';
-import { IOrganizationInfo } from './interfaces/IOrganizationInfo';
+import { findProjectTitle } from './findProjectTitle';
 import { IProjectInfo } from './interfaces/IProjectInfo';
-import { parseProject } from './parseProject';
 
-export async function findProjectsOnGithub(): Promise<IOrganizationInfo[]> {
-    const organizationsInfo: IOrganizationInfo[] = [];
+export async function parseProject(
+    organizationTitle: string,
+    repoData: any /* <- repository info from Octokit */,
+): Promise<IProjectInfo | null> {
+    const {
+        id,
+        name,
+        owner: { login: organizationName },
+        html_url,
+        homepage,
+        fork,
+    } = repoData;
 
-    function addProject(projectInfo: IProjectInfo) {
-        let organizationInfo = organizationsInfo.find(
-            ({ organizationName }) => organizationName === projectInfo.organizationName,
-        );
-
-        if (!organizationInfo) {
-            organizationInfo = {
-                organizationName: projectInfo.organizationName,
-                organizationTitle: projectInfo.organizationTitle,
-                projects: [],
-            };
-            organizationsInfo.push(organizationInfo);
-        }
-        organizationInfo.projects.push(projectInfo);
-
-        if (!organizationInfo.organizationTitle && projectInfo.organizationTitle) {
-            organizationInfo.organizationTitle = projectInfo.organizationTitle;
-        }
+    if (
+        fork &&
+        name !== 'graffiti-wall' &&
+        name !== 'school-calculator-frontend' /* <- TODO: !!!projects Put to projects-organization.ts */
+    ) {
+        // TODO: !!!projects de-fork the https://github.com/Hackathon-Vzdelavani/school-calculator-frontend and https://github.com/Hackathon-Vzdelavani/school-calculator-frontend
+        console.log(`Skipping ${html_url} because it is forked project`);
+        return null;
     }
 
-    await Promise.all([
-        // ➕ Add projects from hejny
-        (async () => {
-            const { data: repositoriesPage } = await githubOctokit.rest.repos.listForUser({
-                username: GITHUB_USERNAME,
-                per_page: 100, // TODO: pagination
-            });
+    const projectUrl = homepage && new URL(homepage);
+    const repositoryUrl = new URL(html_url);
 
-            await repositoriesPage.forEachAsyncParallel(async (data: any /* <- repository info from Octokit */) => {
-                const projectInfo = await parseProject('Personal projects', data);
+    const projectInfo = {
+        name,
+        title: name,
+        priority: id /* <- !! Better */,
+        projectUrl,
+        repositoryUrl,
+        organizationName,
+        organizationTitle,
+    } satisfies IProjectInfo;
 
-                if (!projectInfo) {
-                    return;
-                }
+    projectInfo.title = await findProjectTitle(projectInfo);
 
-                addProject(projectInfo);
-            });
-        })(),
-
-        // ➕ Add projects from organizations
-        ORGANIZATIONS.forEachAsyncParallel(async ({ organizationName, organizationTitle }) => {
-            const { data: repositoriesPage } = await githubOctokit.rest.repos.listForOrg({
-                org: organizationName,
-                per_page: 100,
-            });
-
-            await repositoriesPage.forEachAsyncParallel(async (data: any /* <- repository info from Octokit */) => {
-                const projectInfo = await parseProject(organizationTitle!, data);
-
-                if (!projectInfo) {
-                    return;
-                }
-
-                addProject(projectInfo);
-            });
-        }),
-    ]);
-
-    // ➕ Add projects from other places
-    PROJECTS.forEach(addProject);
-
-    // Note: Sort organizations by priority of sum of its projects
-    organizationsInfo.sort(
-        (a, b) =>
-            b.projects.reduce((sum, { priority }) => sum + priority, 0) -
-            a.projects.reduce((sum, { priority }) => sum + priority, 0),
-    );
-    // Note: Sort projects in every organization by priority
-    organizationsInfo.forEach((organizationInfo) => organizationInfo.projects.sort((a, b) => b.priority - a.priority));
-
-    return organizationsInfo;
+    return projectInfo;
 }
-
-/**
- * TODO: Name should be extracted better (and probbably always with its emoji)
- * TODO: URL should be separated into repositoryUrl and projectUrl (which can be same) and in link should be used projectUrl
- * TODO: Iterate thorugh pages
- */
 
 /*
 
