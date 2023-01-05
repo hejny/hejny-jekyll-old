@@ -4,8 +4,8 @@ export interface IProjectInfo {
 
     name: string;
     title: string;
-    projectUrl?: URL;
-    repositoryUrl?: URL;
+    projectUrl: URL | null;
+    repositoryUrl: URL | null;
     priority: number;
 
     tags: Set<string>;

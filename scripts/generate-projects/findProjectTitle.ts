@@ -14,7 +14,7 @@ export async function findProjectTitle(projectInfo: IProjectInfo): Promise<strin
         const readmeUrl = getRawUrlOnGithub(new URL(repositoryUrl.href + '/blob/master/README.md'));
         const readmeResponse = await fetch(readmeUrl.href);
         if (readmeResponse.ok) {
-            const readmeText = await readmeResponse.text();
+            const readmeText: string = await readmeResponse.text();
             const readmeTitles = readmeText.matchAll(/^#\s*(?<title>[^#\n]*)$/gm);
             for (const readmeTitle of Array.from(readmeTitles)) {
                 if (!/This [a-zA-Z0-9\s]*(project|app)/i.test(readmeTitle.groups!.title)) {

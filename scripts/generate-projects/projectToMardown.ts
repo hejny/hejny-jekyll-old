@@ -11,14 +11,18 @@ export function projectToMardown(project: IProjectInfo): string {
     }
     /**/
 
-    let projectMardown = `[${title}](${repositoryUrl || '#'})`;
+    let projectMardown = `[${title}](${projectUrl || repositoryUrl || '#'})`;
 
-    if (projectUrl) {
+    if (projectUrl && repositoryUrl) {
         projectMardown += ` *[🔗](${projectUrl})[👨‍💻](${repositoryUrl})*`;
     }
 
     if (tags.has('draft')) {
-        projectMardown = `*(draft) ${removeMarkdownFormatting(projectMardown)}*`;
+        projectMardown = `*[draft] ${removeMarkdownFormatting(projectMardown)}*`;
+    }
+
+    if (tags.has('old')) {
+        projectMardown = `*[old] ${removeMarkdownFormatting(projectMardown)}*`;
     }
 
     return projectMardown;

@@ -10,6 +10,7 @@ export const PROJECTS: IProjectInfo[] = [
         title: 'Zastávky',
         priority: 0,
         projectUrl: new URL(`https://zastavky.birdlife.cz/`),
+        repositoryUrl: null,
         tags: new Set(),
     },
 

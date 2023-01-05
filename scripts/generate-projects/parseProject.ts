@@ -27,17 +27,15 @@ export async function parseProject(
         return null;
     }
 
-    /* 
+    let projectUrl: URL | null = homepage && new URL(homepage);
+    let repositoryUrl: URL | null = new URL(html_url);
 
-    !!!!!!!!
     if (visibility === 'private') {
-        console.log(`Skipping ${html_url} because it is private`);
-        return null;
-    }
-    */
+        // console.log(`Skipping ${html_url} because it is ${visibility}`);
+        // return null;
 
-    const projectUrl = homepage && new URL(homepage);
-    const repositoryUrl = new URL(html_url);
+        repositoryUrl = null;
+    }
 
     let tags: Set<string> = new Set(topics);
 
