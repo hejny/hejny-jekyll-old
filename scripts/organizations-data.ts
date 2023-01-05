@@ -3,26 +3,25 @@ import { IOrganizationInfo } from './generate-projects/interfaces/IOrganizationI
 // !!! Rename the file to projects-organization.ts
 export const TAGS = [
     'old' /* <- [0] Also include archived */,
-    'library',
-    'utility',
+    'library' /* <- !!!projects Marked with this should have separate organization */,
+    'utility' /* <- !!!projects Marked with this should have separate organization */,
     'game',
     'board-game',
-    'hackathon' /* <- Also search word hackathon automatically in README */,
+    'hackathon' /* <- !!!projects Also search word hackathon automatically in README */ /* <- !!!projects Marked with this should have separate organization */,
     'draft' /* <- [0] Also include project with small number of commits */,
-    'personal',
-    'showcase',
-    'talk',
-    'crypto',
-    'collboard-module',
-    'collboard-module-template',
+    'personal' /* <- !!!projects Marked with this should have separate organization */,
+    'talk' /* <- !!!projects Marked with this should have separate organization */,
+    'crypto',/* <- !!!projects Marked with this should have separate organization */
+    'collboard-module' /* <- !!!projects Marked with this should be under collboard organization */,
+    'collboard-module-template' /* <- !!!projects Marked with this should be under collboard organization */,
 ];
 
-// !!! Use this tags in projects
-// !!! Ignore private projects
-// !!! [0] Archived projects to special section to bottom
-// !!! Grouping of pdfmk
-// !!! Hide drafts
-// !!! Create label for BUG / main project in organization
+// !!!projects Use this tags in projects
+// !!!projects Ignore private projects
+// !!!projects [0] Archived projects to special section to bottom
+// !!!projects Grouping of pdfmk
+// !!!projects Hide drafts
+// !!!projects Create label for BUG / main project in organization
 
 export const ORGANIZATIONS: Omit<IOrganizationInfo, 'projects'>[] = [
     // TODO: List theese organizations dynamically
