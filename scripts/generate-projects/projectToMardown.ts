@@ -18,11 +18,11 @@ export function projectToMardown(project: IProjectInfo): string {
     }
 
     if (tags.has('draft')) {
-        projectMardown = `\`[draft]\` ${removeMarkdownFormatting(projectMardown)}`;
+        projectMardown = `\`draft\` ${removeMarkdownFormatting(projectMardown)}`;
     }
 
     if (tags.has('old')) {
-        projectMardown = `\`[old]\` ${projectMardown}`;
+        projectMardown = `\`old\` ${projectMardown}`;
     }
 
     return projectMardown;
