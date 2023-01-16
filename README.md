@@ -70,6 +70,6 @@ Some projects I have worked on:<br/>
 
 <!-- TODO: Articles -->
 <!-- TODO: Photos (from blog or Social media) -->
-<!-- TODO: Talks & presentation -->
+<!-- TODO: Talks & presentation @see https://github.com/hejny/hejny-old/blob/master/data/articles.neon -->
 <!-- TODO: Calendar -->
 <!-- TODO: Collboard interactive/backgound -->

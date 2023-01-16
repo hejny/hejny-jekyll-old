@@ -1,5 +1,4 @@
 import { IProjectInfo } from './interfaces/IProjectInfo';
-import { removeMarkdownFormatting } from './removeMarkdownFormatting';
 
 export function projectToMardown(project: IProjectInfo): string {
     const { title, projectUrl, repositoryUrl, tags } = project;
@@ -17,13 +16,36 @@ export function projectToMardown(project: IProjectInfo): string {
         projectMardown += ` *[🔗](${projectUrl})[👨‍💻](${repositoryUrl})*`;
     }
 
+    const displayedTags: string[] = [];
+
     if (tags.has('draft')) {
-        projectMardown = `\`draft\` ${removeMarkdownFormatting(projectMardown)}`;
+        displayedTags.push('draft');
     }
 
     if (tags.has('old')) {
-        projectMardown = `\`old\` ${projectMardown}`;
+        // TODO: This should be probbably more hidden
+        displayedTags.push('old');
     }
+
+    if (tags.has('library')) {
+        // TODO: This should be probbably in separate organization, not as a tag
+        displayedTags.push('library');
+    }
+
+    if (tags.has('utility')) {
+        displayedTags.push('utility');
+    }
+
+    if (tags.has('hackathon')) {
+        displayedTags.push('hackathon');
+    }
+
+    if (tags.has('personal')) {
+        // TODO: This should be probbably in separate organization, not as a tag
+        displayedTags.push('personal');
+    }
+
+    projectMardown = displayedTags.map((tag) => '`' + tag + '`').join(' & ') + ' ' + projectMardown;
 
     return projectMardown;
 }

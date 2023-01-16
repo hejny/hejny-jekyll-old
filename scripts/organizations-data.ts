@@ -3,17 +3,19 @@ import { IOrganizationInfo } from './generate-projects/interfaces/IOrganizationI
 // !!! Rename the file to projects-organization.ts
 export const TAGS = [
     'old' /* <- [0] Also include archived */,
-    'library' /* <- !!!projects Marked with this should have separate organization */,
-    'utility' /* <- !!!projects Marked with this should have separate organization */,
+    'library',
+    'utility',
     'game',
     'board-game',
-    'hackathon' /* <- !!!projects Also search word hackathon automatically in README */ /* <- !!!projects Marked with this should have separate organization */,
+    'hackathon' /* <- !!!projects Also search word hackathon automatically in README */,
     'draft' /* <- [0] Also include project with small number of commits */,
-    'personal' /* <- !!!projects Marked with this should have separate organization */,
+    'template',
+    'collboard-module-template',
+    'personal',
     'talk' /* <- !!!projects Marked with this should have separate organization */,
     'crypto' /* <- !!!projects Marked with this should have separate organization */,
     'collboard-module' /* <- !!!projects Marked with this should be under collboard organization */,
-    'collboard-module-template' /* <- !!!projects Marked with this should be under collboard organization */,
+    'collboard-file-support' /* <- !!!projects Marked with this should be under collboard organization */,
 ];
 
 // !!!projects LSD + feeders should have better names + links
