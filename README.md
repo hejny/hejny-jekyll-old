@@ -18,7 +18,6 @@ TODO: Add basic info about myself:
     - Born in Bratislava
     - Lives in Prague
     - CV to download
-    - Hello
 -->
 
 <!-- TODO: !!!5 Shorten the following text, take from short 1st person en: -->
