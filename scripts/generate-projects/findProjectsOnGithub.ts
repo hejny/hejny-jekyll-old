@@ -1,4 +1,4 @@
-import { GITHUB_USERNAME, githubOctokit } from '../config';
+import { githubOctokit, GITHUB_USERNAME } from '../config';
 import { ORGANIZATIONS } from '../organizations-data';
 import { PROJECTS } from '../projects-data';
 import { IOrganizationInfo } from './interfaces/IOrganizationInfo';
