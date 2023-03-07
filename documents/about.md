@@ -1,15 +1,30 @@
-Hi I am Pavol.
+## Short version
 
-<!-- TODO: !!!2 Same as CS (Cs is primary and EN is translated copy)   -->
-<!-- TODO: !!!3 Short version, Full version, 1st person, 3rd person  -->
+I'm Pavol, a developer and tech enthusiast passionate about exploring cutting-edge tools and technologies. As a co-founder of H-edu and Collboard, I'm invested in using digital innovation to transform education. I've developed several citizen science projects, including the first mobile app for birdwatchers in the Czech Republic, and spoken at tech and startup conferences on topics like VR, AR, and AI. I also run Czech.events, a platform that helps people find and attend technology and innovation events. My talent for identifying opportunities for growth and mentoring startups has led me to win several innovation competitions. I'm committed to inspiring others and believe technology can help solve the world's problems.
+
+
+## Full version
+
+<!-- TODO: !!!3 1st person, 3rd person  -->
 <!-- TODO: !!!4 Subtitile from Short version 3rd person -->
 
-I am co-founder of a platform for teachers, [H-Edu](https://www.h-edu.cz/); when the quarantine on March 2020 began, he founded an **online virtual board** [**CollBoard.com**](https://collboard.com/). He worked on several projects of the Czech Ornithological Society([Česká společnost ornitologická](https://www.birdlife.cz/)) and in the past, he also developed his [**online game Towns**](https://github.com/townsgame).
+Hi, I am Pavol, a developer and tech enthusiast who is passionate about exploring cutting-edge tools and technologies.
 
-In terms of community, he has organized several conferences. For example, [in autumn 2019, he organized the CzechFuture.tech](https://www.pavolhejny.com/nulty-rocnik-czech-future-tech/). He co-organized some hackathons like Educational hackathon or Startup Weekends in Prague.
+I am deeply invested in the power of digital innovation to transform the way we learn and work as a developer of educational applications. I co-founded the teacher platform H-edu and the online virtual whiteboard Collboard.
 
-At the same time, he participated in many events and startup competitions as a **mentor** and a **jury**.
+I have worked on several citizen science projects for the Czech Society for Ornithology (CSO), using technology to improve our understanding of the natural world. For example, I developed the first mobile app for birdwatchers in the Czech Republic, which helped people identify bird species and report their sightings. I have also contributed to an international bird census with ornithological associations in Germany, Switzerland and Austria.
 
-He has spoken at many conferences such as [**DevConf**](https://www.devconf.info/)**,** [**LinuxDays**](https://www.linuxdays.cz/)**,** [**OpenAlt**](https://www.openalt.cz/)**,** [**Czech VR Fest**](https://www.facebook.com/czechvrfest/), + many other meetups like [Frontendisti](https://www.facebook.com/frontendisti/), [ITnetwork.cz](https://www.facebook.com/itnetworkcz/), [Jobs Dev](https://www.facebook.com/jobsdevcz/), etc.
+I have also developed my own online browser game, Towns, and worked on many other interesting projects.
 
-He has an overview of what is happening in the Czech Republic for IT & startup events. That's why he is sending out a regular monthly email about the most exciting events at [Czech.events](https://czech.events/).
+Besides development, I speak at technology and startup conferences such as DevConf, LinuxDays, OpenAlt, and Czech VR Fest, and I have also spoken at meetups such as Frontendisti, ITnetwork.cz, and Jobs Dev. I enjoy sharing my expertise on topics such as VR, AR, WebGL, Web3, Blockchain, and AI, and have been invited to many events as a keynote speaker.
+
+As someone who is always on the lookout for interesting events, I have started a newsletter to share my findings with others. Czech.events is a platform that helps people find and attend technology and innovation events in the Czech Republic.
+
+I am a big techno-optimist, always looking forward to the future and excited to see what new innovations will emerge. With a talent for identifying opportunities for innovation and growth, I am eager to help companies and start-ups stay ahead of the curve with cutting-edge technologies. I have mentored and judged several startup and innovation competitions and am proud to say that I have won several of them. Through my work, I am committed to mentoring and inspiring others, and I believe that technology can help us solve many of the world's problems.
+
+*(Written with ChatGPT's assistance)*
+
+
+## Photo
+
+![Pavol Hejný](https://www.gravatar.com/avatar/10bceb8965947164502b4e7b3314733d?s=512)
