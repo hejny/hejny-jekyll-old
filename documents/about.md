@@ -22,6 +22,9 @@ As someone who is always on the lookout for interesting events, I have started a
 
 I am a big techno-optimist, always looking forward to the future and excited to see what new innovations will emerge. With a talent for identifying opportunities for innovation and growth, I am eager to help companies and start-ups stay ahead of the curve with cutting-edge technologies. I have mentored and judged several startup and innovation competitions and am proud to say that I have won several of them. Through my work, I am committed to mentoring and inspiring others, and I believe that technology can help us solve many of the world's problems.
 
+-  [![English](../assets/languages/us-uk.svg) Bio in English](./about.md)
+-  [![Čeština](../assets/languages/cs.svg) Bio v Češtině](./about.cs.md)
+
 *(Written with ChatGPT's assistance)*
 
 
