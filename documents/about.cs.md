@@ -4,11 +4,14 @@
 ## Krátká verze
 
 
-Jsem Pavol, vývojář a technologický nadšenec, který s nadšením zkoumá nejmodernější nástroje a technologie. Jako spoluzakladatel společností H-edu a Collboard investuji do využívání digitálních inovací k transformaci vzdělávání. Vyvinul jsem několik projektů občanské vědy, včetně první mobilní aplikace pro pozorovatele ptáků v České republice, a přednášel na technologických a startupových konferencích na témata jako VR, AR a AI. Vedu také platformu Czech.events, která pomáhá lidem vyhledávat a navštěvovat technologické a inovační akce. Můj talent pro vyhledávání příležitostí k růstu a mentoring startupů mě přivedl k vítězství v několika inovačních soutěžích. Snažím se inspirovat ostatní a věřím, že technologie mohou pomoci řešit problémy světa.
+Jsem Pavol, vývojář, který s nadšením využívá nové nástroje a technologie. Spoluzaložil jsem virtuální tabuli Collboard  a elektronické učebnice H-edu. Pracoval jsem na mnoha projektech České společnosti ornitologické. Přednášel jsem na mnoha technologických a startupových konferencích + byl v porotě a mentorem mnoha soutěží - například StartupWeekendu. Také pracuji na Czech.events, newsletteru s nejzajímavějšími technologickými a startup událostmi v Čechách.
+
 
 ## Dlouhá verze
 
-Ahoj, jsem Pavol, vývojář a technologický nadšenec, který s nadšením zkoumá nejmodernější nástroje a technologie.
+*(Nezní úplně dobře - napsaná automaticky)*
+
+Ahoj, jsem Pavol, vývojář a technologický nadšenec, který využívá nejnovější nástroje a technologie.
 
 Jako vývojář vzdělávacích aplikací hluboce věřím v sílu digitálních inovací, které mění způsob, jakým se učíme a pracujeme. Spoluzaložil jsem učitelskou platformu H-edu a online virtuální tabuli Collboard.
 
