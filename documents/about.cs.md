@@ -1,4 +1,4 @@
-<!-- TODO: !!! Add links  -->
+<!-- TODO: Links will be added automatically by linkMarkdown util  -->
 <!-- TODO: !!!4 Subtitile from Short version 3rd person -->
 
 ## Krátká verze
