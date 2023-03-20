@@ -11,31 +11,12 @@ Note: [🦊] Jenkyll template is wrapped in a html comment so:
 {% include index.html %}
 -->
 
-Hi I am Pavol.
+Hi,
 
-<!--
-TODO: Remove this after competition
-TODO: Add basic info about myself:
-    - DoB 1993-09-08
-    - Born in Bratislava
-    - Lives in Prague
-    - CV to download
--->
+I am Pavol, a developer and tech enthusiast passionate about exploring cutting-edge tools and technologies. As a co-founder of [H-edu](https://www.h-edu.cz/) and [Collboard](https://collboard.com/), I'm invested in using digital innovation to transform education. I've developed several citizen science projects, including the first mobile app for birdwatchers in the Czech Republic, and spoken at tech and startup conferences on topics like VR, AR, and AI. I also run [Czech.events](https://czech.events/), a platform that helps people find and attend technology and innovation events. My talent for identifying opportunities for growth and mentoring startups has led me to win several innovation competitions. I'm committed to inspiring others and believe technology can help solve the world's problems.
 
-<!-- TODO: !!!5 Shorten the following text, take from short 1st person en: -->
-
-I am co-founder of a platform for teachers, [H-Edu](https://www.h-edu.cz/); when the quarantine on March 2020 began, he founded an **online virtual board** [**CollBoard.com**](https://collboard.com/). He worked on several projects of the Czech Ornithological Society([Česká společnost ornitologická](https://www.birdlife.cz/)) and in the past, he also developed his [**online game Towns**](https://github.com/townsgame).
-
-In terms of community, he has organized several conferences. For example, [in autumn 2019, he organized the CzechFuture.tech](https://www.pavolhejny.com/nulty-rocnik-czech-future-tech/). He co-organized some hackathons like Educational hackathon or Startup Weekends in Prague.
-
-At the same time, he participated in many events and startup competitions as a **mentor** and a **jury**.
-
-He has spoken at many conferences such as [**DevConf**](https://www.devconf.info/)**,** [**LinuxDays**](https://www.linuxdays.cz/)**,** [**OpenAlt**](https://www.openalt.cz/)**,** [**Czech VR Fest**](https://www.facebook.com/czechvrfest/), + many other meetups like [Frontendisti](https://www.facebook.com/frontendisti/), [ITnetwork.cz](https://www.facebook.com/itnetworkcz/), [Jobs Dev](https://www.facebook.com/jobsdevcz/), etc.
-
-He has an overview of what is happening in the Czech Republic for IT & startup events. That's why he is sending out a regular monthly email about the most exciting events at [Czech.events](https://czech.events/).
-
--   [![British flag](./assets/languages/us-uk.svg) Bio in English](./documents/about.md)
--   [![Česká vlajka](./assets/languages/cs.svg) Bio v Češtině](./documents/about.cs.md)
+-   [![English](./assets/languages/us-uk.svg) Full bio in English](./documents/about.md)
+-   [![Čeština](./assets/languages/cs.svg) Full bio in Czech](./documents/about.cs.md)
 
 ## 📩 Contact
 

@@ -1,19 +1,35 @@
+<!-- TODO: Links will be added automatically by linkMarkdown util  -->
+<!-- TODO: !!!4 Subtitile from Short version 3rd person -->
+
 ## Krátká verze
 
-<!-- TODO: !!!1 Short version, Full version, 1st person, 3rd person  -->
 
-**Pavol Hejný** je vývojář aplikací pro vzdělávání.
-Spolupracoval na pořádání mnoha technologických konferencí, hackathonů a soutěží.
+Jsem Pavol, vývojář, který s nadšením využívá nové nástroje a technologie. Spoluzaložil jsem virtuální tabuli Collboard  a elektronické učebnice H-edu. Pracoval jsem na mnoha projektech České společnosti ornitologické. Přednášel jsem na mnoha technologických a startupových konferencích + byl v porotě a mentorem mnoha soutěží - například Startup Weekendu. Také pracuji na Czech.events, newsletteru s nejzajímavějšími technologickými a startup událostmi v Čechách.
+
 
 ## Dlouhá verze
 
-**Pavol Hejný** je spoluzakladatelem platformy pro učitele H-Edu a online virtuální tabule CollBoard.com. Pracoval na projektech České společnosti ornitologické a v minulosti také vyvíjel online hru Towns [a mnoho dalších projektů](https://github.com/hejny?tab=repositories).
+*(Nezní úplně dobře - napsaná automaticky)*
 
-Mluvil na různých konferencích jako jsou DevConf, LinuxDays, OpenAlt, Czech VR Fest, Frontendisti, ITnetwork.cz, Jobs Dev, atd.
-Sám uspořádal několik technologických konferencí, spolupracoval na pořádání hackathonů a zároveň se účastnil mnoha startupových soutěží jako mentor i porotce.
+Ahoj, jsem Pavol, vývojář a technologický nadšenec, který využívá nejnovější nástroje a technologie.
 
-Má přehled o technologickém dění v České republice a lidem, kteří mají zájem, zasílá měsíční e-mail o nejzajímavějších událostech na Czech.events.
+Jako vývojář vzdělávacích aplikací hluboce věřím v sílu digitálních inovací, které mění způsob, jakým se učíme a pracujeme. Spoluzaložil jsem učitelskou platformu H-edu a online virtuální tabuli Collboard.
+
+Pracoval jsem na několika projektech občanské vědy pro Českou společnost ornitologickou (ČSO), které využívají technologie ke zlepšení našeho porozumění světu přírody. Vyvinul jsem například první mobilní aplikaci pro pozorovatele ptáků v České republice, která pomáhala lidem určovat ptačí druhy a hlásit jejich pozorování. Podílel jsem se také na mezinárodním sčítání ptáků s ornitologickými spolky v Německu, Švýcarsku a Rakousku.
+
+Vyvinul jsem také vlastní online hru pro prohlížeč Towns a pracoval na mnoha dalších zajímavých projektech.
+
+Kromě vývoje přednáším na technologických a startupových konferencích, jako jsou DevConf, LinuxDays, OpenAlt nebo Czech VR Fest, a vystupoval jsem také na meetupech Frontendisti, ITnetwork.cz a Jobs Dev. Rád se dělím o své zkušenosti s tématy jako VR, AR, WebGL, Web3, Blockchain a AI a byl jsem pozván na mnoho akcí jako keynote speaker.
+
+Jako člověk, který neustále vyhledává zajímavé události, jsem založil newsletter, abych se o své poznatky podělil s ostatními. Czech.events je platforma, která pomáhá lidem najít a navštívit technologické a inovační akce v České republice.
+
+Jsem velký technooptimista, vždy se těším na budoucnost a s nadšením sleduji, jaké nové inovace se objeví. Mám talent na vyhledávání příležitostí pro inovace a růst, a tak rád pomáhám firmám a začínajícím podnikům, aby si udržely náskok díky špičkovým technologiím. Byl jsem mentorem a porotcem několika soutěží startupů a inovací a jsem hrdý na to, že mohu říci, že jsem několik z nich vyhrál. Svou prací se snažím mentorovat a inspirovat ostatní a věřím, že technologie nám mohou pomoci vyřešit mnoho světových problémů.
+
+-  [![English](../assets/languages/us-uk.svg) Bio in English](./about.md)
+-  [![Čeština](../assets/languages/cs.svg) Bio v Češtině](./about.cs.md)
+
+*(Napsáno za pomocí ChatGPT)*
 
 ## Fotka
 
-![Pavol Hejný](https://www.gravatar.com/avatar/10bceb8965947164502b4e7b3314733d?s=256)
+![Pavol Hejný](https://www.gravatar.com/avatar/10bceb8965947164502b4e7b3314733d?s=512)
