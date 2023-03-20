@@ -1,3 +1,5 @@
+# `⚠ This is deprecated portfolio` [see the new one](https://github.com/hejny/hejny)
+
 <!--
 # 👨‍💼 Pavol Hejný
 -->
